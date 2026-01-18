@@ -1,34 +1,26 @@
-/* eslint-disable max-len */
+import type { JSX } from 'react';
 import appleStoreBadge from './../assets/img/apple.svg';
 import googeStoreBadge from './../assets/img/google.svg';
 
 const Badges: React.FC = (): JSX.Element => {
   return (
-    <section className='max515:flex max515:flex-col'>
-      <div className='align-bottom inline-block me-10 max515:mb-5 max515:m-auto'>
+    <section>
+      <div className='align-bottom inline-block me-10'>
         <a
           className='align-bottom inline-block'
-          href='https://apps.apple.com/us/app/justfortoday/id6479473282'
+          href='https://apps.apple.com'
           target='_blank'
           rel='noopener noreferrer'>
-          <img
-            className='h-12 min460:h-16'
-            src={appleStoreBadge}
-            alt='Apple Store Badge'
-          />
+          <img className='h-12' src={appleStoreBadge} alt='Apple Store Badge' />
         </a>
       </div>
-      <div className='align-bottom inline-block max515:m-auto'>
+      <div className='align-bottom inline-block'>
         <a
           className='align-bottom inline-block'
-          href='https://play.google.com/store/apps/details?id=nz.co.mikeparker.jft'
+          href='https://play.google.com/store'
           target='_blank'
           rel='noopener noreferrer'>
-          <img
-            className='h-12 min460:h-16'
-            src={googeStoreBadge}
-            alt='Googe Store Badge'
-          />
+          <img className='h-12' src={googeStoreBadge} alt='Googe Store Badge' />
         </a>
       </div>
     </section>

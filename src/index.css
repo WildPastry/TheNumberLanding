@@ -2,7 +2,7 @@
 @import url('fonts.css');
 
 /* Tailwind */
-@import 'tailwindcss/preflight';
+@import 'tailwindcss';
 @tailwind utilities;
 
 @theme {
