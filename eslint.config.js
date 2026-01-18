@@ -7,7 +7,7 @@ import { defineConfig, globalIgnores } from 'eslint/config';
 import wildpastryConfig from '@wildpastry/eslint-config';
 
 export default defineConfig([
-  globalIgnores(['dist']),
+  globalIgnores(['dist', '**/*.spec.tsx']),
   ...wildpastryConfig,
   {
     files: ['**/*.{ts,tsx}'],
@@ -18,7 +18,6 @@ export default defineConfig([
       reactRefresh.configs.vite
     ],
     languageOptions: {
-      ecmaVersion: 2020,
       globals: globals.browser,
       parserOptions: {
         project: ['./tsconfig.node.json', './tsconfig.app.json']
