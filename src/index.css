@@ -1,4 +1,75 @@
-@import 'tailwindcss';
-@tailwind base;
-@tailwind components;
+/* Local fonts */
+@import url('fonts.css');
+
+/* Tailwind */
+@import 'tailwindcss/preflight';
 @tailwind utilities;
+
+@theme {
+  --color-strawberry: #f38ba3;
+  --color-vanilla: #f9f4da;
+  --color-lime: #0ba95b;
+  --color-berry: #7b5ea7;
+  --color-lemon: #fcba28;
+  --color-water: #12b5e5;
+  --color-watermelon: #ed203d;
+  --color-flame: #fc7428;
+  --color-dark: #0f0d0e;
+  --color-mid: #231f20;
+  --color-light: #f7f7f7;
+  --color-white: #ffffff;
+
+  --font-family-BebasNeueRegular: BebasNeueRegular, sans-serif;
+
+  --font-size-100: 100px;
+  --font-size-150: 150px;
+  --font-size-200: 200px;
+  --font-size-250: 250px;
+  --font-size-300: 300px;
+}
+
+:root {
+  /* Theme setup */
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+/* Default styles */
+html,
+body,
+#root {
+  height: 100%;
+}
+
+p {
+  letter-spacing: 0.3px;
+}
+
+a {
+  color: var(--color-spotBlue);
+  text-decoration: none;
+}
+
+a:hover,
+a.active {
+  color: var(--color-text);
+}
+
+a.active:hover {
+  cursor: default;
+}
+
+ul,
+li {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-family-BebasNeueRegular);
+  letter-spacing: 0.3px;
+}

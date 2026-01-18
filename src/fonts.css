@@ -1,0 +1,6 @@
+@font-face {
+  font-family: 'BebasNeueRegular';
+  src:
+    local('BebasNeueRegular'),
+    url(./assets/fonts/BebasNeue-Regular.otf) format('opentype');
+}

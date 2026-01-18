@@ -1,13 +1,10 @@
-import './App.css';
+import type { JSX } from 'react';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import routesConfig from './routes/Routes';
 
-function App() {
-  return (
-    <section>
-      <div>
-        <h1>TheNumber</h1>
-      </div>
-    </section>
-  );
-}
+const App: React.FC = (): JSX.Element => {
+  const router = createBrowserRouter(routesConfig);
+  return <RouterProvider router={router} />;
+};
 
 export default App;
