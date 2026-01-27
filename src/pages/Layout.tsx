@@ -6,15 +6,15 @@ import { Outlet } from 'react-router-dom';
 
 const Layout: React.FC = (): JSX.Element => {
   return (
-    <main>
+    <main className='h-full w-full p-3 flex flex-col'>
       <Header />
-      <section>
+      <section className='flex-auto max-w-7xl m-auto'>
         <Outlet />
-      </section>
-      <div>
         <Badges />
+      </section>
+      <section className='shrink-0'>
         <Footer />
-      </div>
+      </section>
     </main>
   );
 };

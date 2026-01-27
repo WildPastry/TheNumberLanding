@@ -3,12 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 const Header: React.FC = (): JSX.Element => {
   return (
-    <section className='bg-lime'>
-      <h1>HEADER</h1>
-      {/* Logo */}
-      <NavLink to={'/home'}>
-        <h1>TheNumber</h1>
-      </NavLink>
+    <section>
       {/* Desktop menu */}
       <ul className='bg-flame'>
         <li>
