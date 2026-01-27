@@ -14,11 +14,11 @@ export default defineConfig([
 
   ...wildpastryConfig,
 
-  // ✅ App (browser) files → tsconfig.app.json
+  // App (browser) files → tsconfig.app.json
   {
     extends: [
       js.configs.recommended,
-      ...tseslint.configs.recommended, // NOTE: spread (it’s an array)
+      ...tseslint.configs.recommended,
       reactHooks.configs.flat.recommended,
       reactRefresh.configs.vite
     ],
@@ -32,7 +32,7 @@ export default defineConfig([
     }
   },
 
-  // ✅ Node/tooling files → tsconfig.node.json
+  // Node/tooling files → tsconfig.node.json
   {
     files: [
       '*.{ts,js}',

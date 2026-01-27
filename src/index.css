@@ -21,17 +21,16 @@
   --color-prmary-dark: #0f0d0e;
   --color-secondary-dark: #231f20;
   /* Fonts */
-  --font-family-BebasNeueRegular: BebasNeueRegular, sans-serif;
-  --font-family-CubanoRegular: CubanoRegular, sans-serif;
-  --font-family-OutfitBold: OutfitBold, sans-serif;
-  --font-family-OutfitLight: OutfitLight, sans-serif;
-  --font-family-OutfitRegular: OutfitRegular, sans-serif;
-  /* Font sizes */
-  --font-size-100: 100px;
-  --font-size-150: 150px;
-  --font-size-200: 200px;
-  --font-size-250: 250px;
-  --font-size-300: 300px;
+  --font-bebas: BebasNeueRegular, sans-serif;
+  --font-cubano: CubanoRegular, sans-serif;
+  --font-outfit: OutfitRegular, sans-serif;
+  --font-outfit-bold: OutfitBold, sans-serif;
+  --font-outfit-light: OutfitLight, sans-serif;
+  --text-100: 100px;
+  --text-150: 150px;
+  --text-200: 200px;
+  --text-250: 250px;
+  --text-300: 300px;
 }
 
 :root {
