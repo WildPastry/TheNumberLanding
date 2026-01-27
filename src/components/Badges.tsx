@@ -9,18 +9,18 @@ const Badges: React.FC = (): JSX.Element => {
         <a
           className='align-bottom inline-block'
           href='https://apps.apple.com'
-          target='_blank'
-          rel='noopener noreferrer'>
-          <img className='h-12' src={appleStoreBadge} alt='Apple Store Badge' />
+          rel='noopener noreferrer'
+          target='_blank'>
+          <img alt='Apple Store Badge' className='h-12' src={appleStoreBadge} />
         </a>
       </div>
       <div className='align-bottom inline-block'>
         <a
           className='align-bottom inline-block'
           href='https://play.google.com/store'
-          target='_blank'
-          rel='noopener noreferrer'>
-          <img className='h-12' src={googeStoreBadge} alt='Googe Store Badge' />
+          rel='noopener noreferrer'
+          target='_blank'>
+          <img alt='Googe Store Badge' className='h-12' src={googeStoreBadge} />
         </a>
       </div>
     </section>

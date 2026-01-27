@@ -6,26 +6,26 @@ import Terms from '../pages/Terms';
 
 const routesConfig = [
   {
-    path: '/',
-    element: <Layout />,
     children: [
       {
-        path: '/',
-        element: <Navigate to='/home' />
+        element: <Navigate to='/home' />,
+        path: '/'
       },
       {
-        path: '/home',
-        element: <Home />
+        element: <Home />,
+        path: '/home'
       },
       {
-        path: '/privacy',
-        element: <Privacy />
+        element: <Privacy />,
+        path: '/privacy'
       },
       {
-        path: '/terms',
-        element: <Terms />
+        element: <Terms />,
+        path: '/terms'
       }
-    ]
+    ],
+    element: <Layout />,
+    path: '/'
   }
 ];
 
