@@ -16,12 +16,16 @@
   --color-watermelon: #ed203d;
   --color-flame: #fc7428;
   /* Light and dark */
-  --color-dark: #0f0d0e;
-  --color-mid: #231f20;
-  --color-light: #f7f7f7;
-  --color-white: #ffffff;
+  --color-prmary-light: #efefef;
+  --color-secondary-light: #ffffff;
+  --color-prmary-dark: #0f0d0e;
+  --color-secondary-dark: #231f20;
   /* Fonts */
   --font-family-BebasNeueRegular: BebasNeueRegular, sans-serif;
+  --font-family-CubanoRegular: CubanoRegular, sans-serif;
+  --font-family-OutfitBold: OutfitBold, sans-serif;
+  --font-family-OutfitLight: OutfitLight, sans-serif;
+  --font-family-OutfitRegular: OutfitRegular, sans-serif;
   /* Font sizes */
   --font-size-100: 100px;
   --font-size-150: 150px;
@@ -32,8 +36,8 @@
 
 :root {
   /* Theme setup */
-  background-color: var(--color-dark);
-  color: var(--color-light);
+  background-color: var(--color-prmary-dark);
+  color: var(--color-prmary-light);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
 }
@@ -67,11 +71,4 @@ ul,
 li {
   color: var(--color-text);
   text-decoration: none;
-}
-
-h1,
-h2,
-h3 {
-  font-family: var(--font-family-BebasNeueRegular);
-  letter-spacing: 0.3px;
 }
