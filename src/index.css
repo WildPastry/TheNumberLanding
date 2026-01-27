@@ -70,4 +70,6 @@ ul,
 li {
   color: var(--color-text);
   text-decoration: none;
+  list-style-type: none;
+  padding: 0.25rem 0;
 }

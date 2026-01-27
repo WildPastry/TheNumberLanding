@@ -3,9 +3,9 @@ import { NavLink } from 'react-router-dom';
 
 const Header: React.FC = (): JSX.Element => {
   return (
-    <section>
+    <section className='absolute left-3 top-3'>
       {/* Desktop menu */}
-      <ul className='bg-flame'>
+      <ul className='font-outfit-bold text-xl'>
         <li>
           <NavLink to={'/home'}>HOME</NavLink>
         </li>
