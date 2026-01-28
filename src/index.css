@@ -53,13 +53,7 @@ p {
 }
 
 a {
-  color: var(--color-spotBlue);
   text-decoration: none;
-}
-
-a:hover,
-a.active {
-  color: var(--color-text);
 }
 
 a.active:hover {
@@ -68,7 +62,6 @@ a.active:hover {
 
 ul,
 li {
-  color: var(--color-text);
   text-decoration: none;
   list-style-type: none;
   padding: 0.25rem 0;

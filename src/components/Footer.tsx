@@ -5,7 +5,7 @@ const Footer: React.FC = (): JSX.Element => {
   const currentDate: number = new Date().getFullYear();
   return (
     <section className='absolute right-3 bottom-3'>
-      <p className='font-outfit-bold text-xl'>BY MPARKERNZ {currentDate}</p>
+      <p className='font-outfit-light text-l'>© {currentDate} Mike Parker</p>
     </section>
   );
 };
