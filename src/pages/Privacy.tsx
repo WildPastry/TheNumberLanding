@@ -5,15 +5,15 @@ const Privacy: React.FC = (): JSX.Element => {
     <section className='max-w-7xl m-auto text-center'>
       <h1 className='text-strawberry font-cubano text-5xl mb-10'>PRIVACY</h1>
       <p className='text:md min674:text-xl leading-8'>
-        JustForToday respects your privacy and is committed to protecting your
+        The Number respects your privacy and is committed to protecting your
         personal information. This Privacy Statement outlines how we collect,
         use, and safeguard your data when you use our mobile application.
       </p>
-      <hr className='h-px my-10 bg-gray-600 border-0' />
+      <hr className='h-px my-10 bg-strawberry border-0' />
       <div className='mb-10'>
         <h3 className='text-lg text-spotBlue mb-2'>DATA COLLECTION</h3>
         <p className='text-md'>
-          We want to reassure our users that JustForToday does not collect any
+          We want to reassure our users that The Number does not collect any
           personal data or information from you while you use our mobile
           application. We do not gather any data about your device, usage
           patterns, or any other information that could potentially identify
@@ -46,17 +46,16 @@ const Privacy: React.FC = (): JSX.Element => {
         <h3 className='text-lg text-spotBlue mb-2'>CONTACT US</h3>
         <p className='text-md mb-2'>
           If you have any questions or concerns regarding this Privacy Statement
-          or the privacy practices of JustForToday, please contact us
-          <a className='ml-1' href='mailto:justfortoday@mikeparker.co.nz'>
-            here
-          </a>
-          .
-        </p>
+          or the privacy practices of The Number, please contact us
+        </p>{' '}
+        <a className='ml-1' href='mailto:thenumber@mikeparker.co.nz'>
+          here.
+        </a>
         <p className='text-md'>
-          By using JustForToday, you signify your acceptance of this Privacy
+          By using The Number, you signify your acceptance of this Privacy
           Statement. If you do not agree to this Privacy Statement, please
-          refrain from using our mobile application. Thank you for trusting
-          JustForToday with your privacy.
+          refrain from using our mobile application. Thank you for trusting The
+          Number with your privacy.
         </p>
       </div>
     </section>

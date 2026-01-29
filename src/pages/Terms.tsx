@@ -1,3 +1,4 @@
+/* eslint-disable max-lines-per-function */
 import type { JSX } from 'react';
 
 const Terms: React.FC = (): JSX.Element => {
@@ -9,8 +10,8 @@ const Terms: React.FC = (): JSX.Element => {
       <p className='text:md min674:text-xl leading-8 mb-4'>
         These Terms and Conditions constitute a legally binding agreement made
         between you, whether personally or on behalf of an entity (“you”) and
-        JUSTFORTODAY (“we,” “us” or “our”), concerning your access to and use of
-        the JUSTFORTODAY mobile application (collectively, the “App”). You agree
+        THENUMBER (“we,” “us” or “our”), concerning your access to and use of
+        the THENUMBER mobile application (collectively, the “App”). You agree
         that by accessing the App, you have read, understood, and agree to be
         bound by all of these Terms and Conditions.
       </p>
@@ -22,7 +23,7 @@ const Terms: React.FC = (): JSX.Element => {
         for any reason. We will alert you about any changes by email, and you
         waive any right to receive specific notice of each such change.
       </p>
-      <hr className='h-px my-10 bg-gray-600 border-0' />
+      <hr className='h-px my-10 bg-berry border-0' />
       <h3 className='text-lg text-spotBlue mb-2'>
         INTELLECTUAL PROPERTY RIGHTS
       </h3>
