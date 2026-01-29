@@ -4,7 +4,10 @@ import type { JSX } from 'react';
 const Home: React.FC = (): JSX.Element => {
   return (
     <section className='h-full w-full flex flex-col justify-center items-center'>
-      <h1 className='text-water font-cubano text-100'>THE NUMBER</h1>
+      <div className='flex items-center gap-3'>
+        <h1 className='text-vanilla font-cubano text-5xl'>THE</h1>
+        <h1 className='text-water font-cubano text-100'>NUMBER</h1>
+      </div>
       <div className='py-2 px-3 bg-lemon mb-10'>
         <h2 className='text-prmary-dark font-bebas text-5xl'>
           A date tracking app
