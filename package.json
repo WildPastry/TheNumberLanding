@@ -14,30 +14,31 @@
     "start": "vite"
   },
   "dependencies": {
+    "react": "^19.2.4",
     "react-dom": "^19.2.4",
-    "react-router-dom": "^7.13.0",
-    "react": "^19.2.4"
+    "react-icons": "^5.5.0",
+    "react-router-dom": "^7.13.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.2",
     "@tailwindcss/vite": "^4.1.18",
     "@types/node": "^25.1.0",
-    "@types/react-dom": "^19.2.3",
     "@types/react": "^19.2.10",
+    "@types/react-dom": "^19.2.3",
     "@typescript-eslint/eslint-plugin": "^8.54.0",
     "@typescript-eslint/parser": "^8.54.0",
     "@vitejs/plugin-react": "^5.1.2",
     "@wildpastry/eslint-config": "^1.8.9",
+    "eslint": "^9.39.2",
     "eslint-plugin-prettier": "^5.5.5",
+    "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.4.26",
-    "eslint-plugin-react": "^7.37.5",
-    "eslint": "^9.39.2",
     "globals": "^17.2.0",
     "prettier": "^3.8.1",
     "tailwindcss": "^4.1.18",
-    "typescript-eslint": "^8.54.0",
     "typescript": "~5.9.3",
+    "typescript-eslint": "^8.54.0",
     "vite": "^7.3.1"
   }
 }

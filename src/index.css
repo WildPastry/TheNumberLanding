@@ -1,12 +1,9 @@
-/* Local fonts */
 @import url('fonts.css');
-
-/* Tailwind */
 @import 'tailwindcss';
 @tailwind utilities;
 
 @theme {
-  /* Unchanging */
+  /* Brand / unchanging */
   --color-strawberry: #f38ba3;
   --color-vanilla: #f9f4da;
   --color-lime: #0ba95b;
@@ -15,17 +12,21 @@
   --color-water: #12b5e5;
   --color-watermelon: #ed203d;
   --color-flame: #fc7428;
-  /* Light and dark */
-  --color-prmary-light: #efefef;
+
+  /* Raw theme palettes */
+  --color-primary-light: #efefef;
   --color-secondary-light: #ffffff;
-  --color-prmary-dark: #0f0d0e;
+  --color-primary-dark: #0f0d0e;
   --color-secondary-dark: #231f20;
+
   /* Fonts */
   --font-bebas: BebasNeueRegular, sans-serif;
   --font-cubano: CubanoRegular, sans-serif;
   --font-outfit: OutfitRegular, sans-serif;
   --font-outfit-bold: OutfitBold, sans-serif;
   --font-outfit-light: OutfitLight, sans-serif;
+
+  /* Text sizes */
   --text-100: 100px;
   --text-150: 150px;
   --text-200: 200px;
@@ -33,36 +34,48 @@
   --text-300: 300px;
 }
 
+/* 1) Semantic defaults (LIGHT) */
 :root {
-  /* Theme setup */
-  background-color: var(--color-prmary-dark);
-  color: var(--color-prmary-light);
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
+  color-scheme: light;
+  --bg: var(--color-primary-light);
+  --fg: var(--color-primary-dark);
+  --surface: var(--color-secondary-light);
 }
 
-/* Default styles */
+/* 2) Semantic overrides (DARK) */
+:root.dark {
+  color-scheme: dark;
+  --bg: var(--color-primary-dark);
+  --fg: var(--color-primary-light);
+  --surface: var(--color-secondary-dark);
+}
+
+/* Use semantic tokens everywhere */
 html,
 body,
 #root {
   height: 100%;
 }
 
-p {
-  letter-spacing: 0.3px;
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
 }
 
+p {
+  letter-spacing: 0.5px;
+}
 a {
   text-decoration: none;
 }
-
 a.active:hover {
   cursor: default;
 }
-
 ul,
 li {
-  text-decoration: none;
   list-style-type: none;
-  padding: 0.15rem 0;
+  padding: 0;
+  margin: 0;
 }
