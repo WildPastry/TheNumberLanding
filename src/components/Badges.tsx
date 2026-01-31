@@ -4,7 +4,7 @@ import googeStoreBadge from './../assets/img/google.svg';
 
 const Badges: React.FC = (): JSX.Element => {
   return (
-    <section className='flex gap-8 justify-center mb-10'>
+    <section className='flex gap-8 justify-center'>
       <a
         href='https://apps.apple.com'
         rel='noopener noreferrer'

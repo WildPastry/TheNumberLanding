@@ -41,7 +41,6 @@
   --fg: var(--color-primary-dark);
   --surface: var(--color-secondary-light);
   --main-banner: var(--color-berry);
-  --privacy-banner: var(--color-flame);
 }
 
 /* Dark theme */
@@ -51,7 +50,6 @@
   --fg: var(--color-primary-light);
   --surface: var(--color-secondary-dark);
   --main-banner: var(--color-lemon);
-  --privacy-banner: var(--color-watermelon);
 }
 
 html,
