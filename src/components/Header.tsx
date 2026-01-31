@@ -1,7 +1,6 @@
-import { IoMoon, IoSunny } from 'react-icons/io5';
 import type { JSX } from 'react';
 import { NavLink } from 'react-router-dom';
-import { useTheme } from '../theme/useTheme';
+import ThemeToggle from './ThemeToggle';
 
 type NavLinkMenuItem = {
   activeClass: string;
@@ -33,8 +32,6 @@ const LINKS: readonly NavLinkMenuItem[] = [
 ];
 
 const Header: React.FC = (): JSX.Element => {
-  const { theme, toggle } = useTheme();
-
   return (
     <section className='flex justify-between p-5'>
       <ul className='font-outfit-light text-xl'>
@@ -58,12 +55,7 @@ const Header: React.FC = (): JSX.Element => {
           )
         )}
       </ul>
-      <button
-        className='cursor-pointer flex'
-        onClick={toggle}
-        title={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}>
-        {theme === 'dark' ? <IoSunny size={25} /> : <IoMoon size={25} />}
-      </button>
+      <ThemeToggle />
     </section>
   );
 };
