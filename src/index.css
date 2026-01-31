@@ -67,6 +67,7 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+a,
 p {
   letter-spacing: 0.5px;
   font-family: var(--font-outfit);
@@ -76,6 +77,11 @@ h2,
 h3 {
   letter-spacing: 0.5px;
   font-family: var(--font-bebas);
+}
+
+h4 {
+  letter-spacing: 0.5px;
+  font-family: var(--font-outfit-light);
 }
 
 a {

@@ -1,14 +1,28 @@
 import type { JSX } from 'react';
+import { useLocation } from 'react-router-dom';
 
 const Footer: React.FC = (): JSX.Element => {
   // Get current date
   const currentDate: number = new Date().getFullYear();
+
+  // Get route
+  const { pathname } = useLocation();
+
+  const getHoverClass = (): string => {
+    if (pathname === '/terms') {
+      return 'hover:text-berry';
+    } else if (pathname === '/privacy') {
+      return 'hover:text-strawberry';
+    }
+    return 'hover:text-water';
+  };
+
   return (
     <section className='p-5 shrink-0'>
       <div className='flex justify-end gap-1'>
-        <p className='font-outfit-light text-l'>© {currentDate}</p>
+        <p className='text-lg'>© {currentDate}</p>
         <a
-          className='font-outfit-light text-l text-(--fg) hover:text-lemon'
+          className={`text-lg text-(--fg) ${getHoverClass()}`}
           href='https://mikeparker.co.nz/'
           rel='noopener noreferrer'
           target='_blank'>

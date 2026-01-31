@@ -6,11 +6,11 @@ const Privacy: React.FC = (): JSX.Element => {
       <h1 className='text-strawberry font-cubano text-5xl mb-10'>
         PRIVACY STATEMENT
       </h1>
-      <p className='text:md'>
+      <h4 className='text-xl'>
         The Number respects your privacy and is committed to protecting your
         personal information. This Privacy Statement outlines how we collect,
         use, and safeguard your data when you use our mobile application.
-      </p>
+      </h4>
       <hr className='h-px my-10 bg-strawberry border-0' />
       <div className='mb-10'>
         <h3 className='text-3xl text-(--fg) mb-2'>DATA COLLECTION</h3>
@@ -50,7 +50,7 @@ const Privacy: React.FC = (): JSX.Element => {
           If you have any questions or concerns regarding this Privacy Statement
           or the privacy practices of The Number, please contact us{' '}
           <a
-            className='ml-1 underline hover:opacity-80'
+            className='ml-1 underline hover:text-strawberry'
             href='mailto:thenumber@mikeparker.co.nz'>
             here.
           </a>

@@ -34,7 +34,7 @@ const LINKS: readonly NavLinkMenuItem[] = [
 const Header: React.FC = (): JSX.Element => {
   return (
     <section className='flex justify-between p-5'>
-      <ul className='font-outfit-light text-xl'>
+      <ul className='font-outfit-bold text-xl'>
         {LINKS.map(
           ({
             activeClass,
