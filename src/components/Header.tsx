@@ -32,7 +32,7 @@ const LINKS: readonly NavLinkMenuItem[] = [
 
 const Header: React.FC = (): JSX.Element => {
   return (
-    <section className='absolute left-3 top-3'>
+    <section className='p-5'>
       <ul className='font-outfit-light text-xl'>
         {LINKS.map(
           ({

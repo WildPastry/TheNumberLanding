@@ -2,7 +2,7 @@ import type { JSX } from 'react';
 
 const Privacy: React.FC = (): JSX.Element => {
   return (
-    <section className='max-w-7xl m-auto'>
+    <section className='max-w-4xl m-auto'>
       <h1 className='text-strawberry font-cubano text-5xl mb-10'>PRIVACY</h1>
       <p className='text:md'>
         The Number respects your privacy and is committed to protecting your

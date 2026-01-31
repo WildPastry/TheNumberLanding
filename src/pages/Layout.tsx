@@ -5,9 +5,11 @@ import { Outlet } from 'react-router-dom';
 
 const Layout: React.FC = (): JSX.Element => {
   return (
-    <main className='h-full w-full p-3 relative'>
+    <main className='h-full w-full flex flex-col'>
       <Header />
-      <Outlet />
+      <section className='flex-auto p-5'>
+        <Outlet />
+      </section>
       <Footer />
     </main>
   );

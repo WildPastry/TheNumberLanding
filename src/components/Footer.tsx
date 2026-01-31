@@ -4,8 +4,8 @@ const Footer: React.FC = (): JSX.Element => {
   // Get current date
   const currentDate: number = new Date().getFullYear();
   return (
-    <section className='absolute right-3 bottom-3'>
-      <div className='flex gap-1'>
+    <section className='p-5 shrink-0'>
+      <div className='flex justify-end gap-1'>
         <p className='font-outfit-light text-l'>© {currentDate}</p>
         <a
           className='font-outfit-light text-l text-vanilla hover:text-lemon'
