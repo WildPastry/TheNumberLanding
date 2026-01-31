@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'BebasNeueRegular';
+  src:
+    local('BebasNeueRegular'),
+    url(./assets/fonts/BebasNeue-Regular.otf) format('opentype');
+}
+@font-face {
+  font-family: 'CubanoRegular';
+  src:
+    local('CubanoRegular'),
+    url(./assets/fonts/Cubano-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'OutfitBold';
+  src:
+    local('OutfitBold'),
+    url(./assets/fonts/OutfitBold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'OutfitLight';
+  src:
+    local('OutfitLight'),
+    url(./assets/fonts/OutfitLight.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'OutfitRegular';
+  src:
+    local('OutfitRegular'),
+    url(./assets/fonts/OutfitRegular.ttf) format('truetype');
+}

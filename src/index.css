@@ -1,4 +1,94 @@
+@import url('fonts.css');
 @import 'tailwindcss';
-@tailwind base;
-@tailwind components;
 @tailwind utilities;
+
+@theme {
+  /* Brand / unchanging */
+  --color-strawberry: #f38ba3;
+  --color-vanilla: #f9f4da;
+  --color-lime: #0ba95b;
+  --color-berry: #7b5ea7;
+  --color-lemon: #fcba28;
+  --color-water: #12b5e5;
+  --color-watermelon: #ed203d;
+  --color-flame: #fc7428;
+
+  /* Raw theme palettes */
+  --color-primary-light: #efefef;
+  --color-secondary-light: #ffffff;
+  --color-primary-dark: #0f0d0e;
+  --color-secondary-dark: #231f20;
+
+  /* Fonts */
+  --font-bebas: BebasNeueRegular, sans-serif;
+  --font-cubano: CubanoRegular, sans-serif;
+  --font-outfit: OutfitRegular, sans-serif;
+  --font-outfit-bold: OutfitBold, sans-serif;
+  --font-outfit-light: OutfitLight, sans-serif;
+
+  /* Text sizes */
+  --text-100: 100px;
+  --text-150: 150px;
+  --text-200: 200px;
+  --text-250: 250px;
+  --text-300: 300px;
+}
+
+/* Light theme */
+:root {
+  color-scheme: light;
+  --bg: var(--color-primary-light);
+  --fg: var(--color-primary-dark);
+  --surface: var(--color-secondary-light);
+  --main-banner: var(--color-berry);
+  --privacy-banner: var(--color-flame);
+}
+
+/* Dark theme */
+:root.dark {
+  color-scheme: dark;
+  --bg: var(--color-primary-dark);
+  --fg: var(--color-primary-light);
+  --surface: var(--color-secondary-dark);
+  --main-banner: var(--color-lemon);
+  --privacy-banner: var(--color-watermelon);
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+p {
+  letter-spacing: 0.5px;
+  font-family: var(--font-outfit);
+}
+
+h2,
+h3 {
+  letter-spacing: 0.5px;
+  font-family: var(--font-bebas);
+}
+
+a {
+  text-decoration: none;
+}
+
+a.active:hover {
+  cursor: default;
+}
+
+ul,
+li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
