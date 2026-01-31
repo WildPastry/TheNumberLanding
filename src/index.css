@@ -34,23 +34,24 @@
   --text-300: 300px;
 }
 
-/* 1) Semantic defaults (LIGHT) */
+/* Light theme */
 :root {
   color-scheme: light;
   --bg: var(--color-primary-light);
   --fg: var(--color-primary-dark);
   --surface: var(--color-secondary-light);
+  --banner: var(--color-berry);
 }
 
-/* 2) Semantic overrides (DARK) */
+/* Dark theme */
 :root.dark {
   color-scheme: dark;
   --bg: var(--color-primary-dark);
   --fg: var(--color-primary-light);
   --surface: var(--color-secondary-dark);
+  --banner: var(--color-lemon);
 }
 
-/* Use semantic tokens everywhere */
 html,
 body,
 #root {
@@ -58,7 +59,7 @@ body,
 }
 
 body {
-  background-color: var(--bg);
+  background: var(--bg);
   color: var(--fg);
   font-synthesis: none;
   text-rendering: optimizeLegibility;

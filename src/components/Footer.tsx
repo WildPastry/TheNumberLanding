@@ -8,7 +8,7 @@ const Footer: React.FC = (): JSX.Element => {
       <div className='flex justify-end gap-1'>
         <p className='font-outfit-light text-l'>© {currentDate}</p>
         <a
-          className='font-outfit-light text-l text-vanilla hover:text-lemon'
+          className='font-outfit-light text-l text-(--fg) hover:text-lemon'
           href='https://mikeparker.co.nz/'
           rel='noopener noreferrer'
           target='_blank'>

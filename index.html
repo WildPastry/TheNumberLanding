@@ -17,7 +17,7 @@
           if (saved === 'dark' || saved === 'light') theme = saved;
         } catch (err) {
           if (location.hostname === 'localhost') {
-            console.warn('Theme init failed (storage blocked?):', err);
+            console.warn('Theme init failed:', err);
           }
         }
         root.classList.toggle('dark', theme === 'dark');

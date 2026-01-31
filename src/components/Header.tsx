@@ -39,7 +39,7 @@ const Header: React.FC = (): JSX.Element => {
           ({
             activeClass,
             hoverClass,
-            inactiveClass = 'text-vanilla',
+            inactiveClass = 'text-(--fg)',
             label,
             to
           }) => (

@@ -11,7 +11,7 @@ const Privacy: React.FC = (): JSX.Element => {
       </p>
       <hr className='h-px my-10 bg-strawberry border-0' />
       <div className='mb-10'>
-        <h3 className='text-lg text-prmary-light mb-2'>DATA COLLECTION</h3>
+        <h3 className='text-lg text-(--fg) mb-2'>DATA COLLECTION</h3>
         <p className='text-md'>
           We want to reassure our users that The Number does not collect any
           personal data or information from you while you use our mobile
@@ -21,14 +21,14 @@ const Privacy: React.FC = (): JSX.Element => {
         </p>
       </div>
       <div className='mb-10'>
-        <h3 className='text-lg text-prmary-light mb-2'>DATA USAGE</h3>
+        <h3 className='text-lg text-(--fg) mb-2'>DATA USAGE</h3>
         <p className='text-md'>
           Since we do not collect any data, we do not use your personal
           information for any purpose.
         </p>
       </div>
       <div className='mb-10'>
-        <h3 className='text-lg text-prmary-light mb-2'>DATA SHARING</h3>
+        <h3 className='text-lg text-(--fg) mb-2'>DATA SHARING</h3>
         <p className='text-md'>
           We do not share any data, personal or otherwise, with third parties.
           Your information is not disclosed, sold, or rented to any external
@@ -36,14 +36,14 @@ const Privacy: React.FC = (): JSX.Element => {
         </p>
       </div>
       <div className='mb-10'>
-        <h3 className='text-lg text-prmary-light mb-2'>CHANGES</h3>
+        <h3 className='text-lg text-(--fg) mb-2'>CHANGES</h3>
         <p className='text-md'>
           We reserve the right to update this Privacy Statement from time to
           time. Any changes will be reflected on this page.
         </p>
       </div>
       <div className='mb-10'>
-        <h3 className='text-lg text-prmary-light mb-2'>CONTACT US</h3>
+        <h3 className='text-lg text-(--fg) mb-2'>CONTACT US</h3>
         <p className='text-md mb-2'>
           If you have any questions or concerns regarding this Privacy Statement
           or the privacy practices of The Number, please contact us
