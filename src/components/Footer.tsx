@@ -4,9 +4,8 @@ import { useLocation } from 'react-router-dom';
 const Footer: React.FC = (): JSX.Element => {
   // Get current date
   const currentDate: number = new Date().getFullYear();
-
   // Get route
-  const { pathname } = useLocation();
+  const { pathname }: { pathname: string } = useLocation();
 
   const getHoverClass = (): string => {
     if (pathname === '/terms') {
@@ -20,9 +19,9 @@ const Footer: React.FC = (): JSX.Element => {
   return (
     <section className='p-5 shrink-0'>
       <div className='flex justify-end gap-1'>
-        <p className='text-lg'>© {currentDate}</p>
+        <p className='text-md'>© {currentDate}</p>
         <a
-          className={`text-lg text-(--fg) ${getHoverClass()}`}
+          className={`text-md text-(--fg) ${getHoverClass()}`}
           href='https://mikeparker.co.nz/'
           rel='noopener noreferrer'
           target='_blank'>
