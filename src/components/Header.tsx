@@ -33,30 +33,39 @@ const LINKS: readonly NavLinkMenuItem[] = [
 
 const Header: React.FC = (): JSX.Element => {
   return (
-    <section className='flex justify-between p-5'>
-      <ul className='font-outfit-bold text-xl'>
-        {LINKS.map(
-          ({
-            activeClass,
-            hoverClass,
-            inactiveClass = 'text-(--fg)',
-            label,
-            to
-          }) => (
-            <li key={to}>
-              <NavLink
-                className={({ isActive, isPending }) =>
-                  `${isActive || isPending ? activeClass : inactiveClass} ${hoverClass}`
-                }
-                to={to}>
-                {label}
-              </NavLink>
-            </li>
-          )
-        )}
-      </ul>
+    <header className='flex justify-between p-5'>
+      <nav aria-label='Primary navigation'>
+        <ul className='font-outfit-bold text-xl flex flex-col gap-2'>
+          {LINKS.map(
+            ({
+              activeClass,
+              hoverClass,
+              inactiveClass = 'text-(--fg)',
+              label,
+              to
+            }) => (
+              <li key={to}>
+                <NavLink
+                  className={({ isActive, isPending }) =>
+                    [
+                      isActive || isPending ? activeClass : inactiveClass,
+                      hoverClass,
+                      'inline-block py-1 rounded-sm',
+                      'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-water',
+                      'focus-visible:ring-offset-2 focus-visible:ring-offset-(--bg)'
+                    ].join(' ')
+                  }
+                  to={to}>
+                  {label}
+                </NavLink>
+              </li>
+            )
+          )}
+        </ul>
+      </nav>
+
       <ThemeToggle />
-    </section>
+    </header>
   );
 };
 

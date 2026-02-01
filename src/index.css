@@ -88,10 +88,3 @@ a {
 a.active:hover {
   cursor: default;
 }
-
-ul,
-li {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}

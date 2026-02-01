@@ -3,30 +3,30 @@ import type { JSX } from 'react';
 
 const Terms: React.FC = (): JSX.Element => {
   return (
-    <section className='max-w-4xl m-auto'>
-      <h1 className='text-berry font-cubano text-5xl mb-10'>
+    <section aria-labelledby='terms-title' className='max-w-4xl m-auto'>
+      <h1 className='text-berry font-cubano text-5xl mb-10' id='terms-title'>
         TERMS AND CONDITIONS
       </h1>
-      <h4 className='text-lg mb-4'>
+      <p className='text-xl mb-4'>
         These Terms and Conditions constitute a legally binding agreement made
         between you, whether personally or on behalf of an entity (“you”) and
         THENUMBER (“we,” “us” or “our”), concerning your access to and use of
         the THENUMBER mobile application (collectively, the “App”). You agree
         that by accessing the App, you have read, understood, and agree to be
         bound by all of these Terms and Conditions.
-      </h4>
-      <h4 className='text-lg'>
+      </p>
+      <p className='text-xl'>
         If you do not agree with all of these Terms and Conditions, then you are
         expressly prohibited from using the App and you must discontinue use
         immediately. We reserve the right, in our sole discretion, to make
         changes or modifications to these Terms and Conditions at any time and
         for any reason. We will alert you about any changes by email, and you
         waive any right to receive specific notice of each such change.
-      </h4>
-      <hr className='h-px my-10 bg-berry border-0' />
-      <h3 className='text-3xl text-(--fg) mb-2'>
+      </p>
+      <hr aria-hidden='true' className='h-px my-10 bg-berry border-0' />
+      <h2 className='text-3xl text-(--fg) mb-2'>
         INTELLECTUAL PROPERTY RIGHTS
-      </h3>
+      </h2>
       <p className='text-md'>
         Unless otherwise indicated, the App is our proprietary property and all
         source code, databases, functionality, software, designs, audio, video,
@@ -47,89 +47,84 @@ const Terms: React.FC = (): JSX.Element => {
         all rights not expressly granted to you in and to the App, the Content
         and the Marks.
       </p>
-      <h3 className='text-3xl text-(--fg) mb-2 mt-8'>USER REGISTRATION</h3>
+      <h2 className='text-3xl text-(--fg) mb-2 mt-8'>USER REGISTRATION</h2>
       <p className='text-md'>
         You may register with the App. You agree to keep your password
         confidential and will be responsible for all use of your account and
         password. We do not have access to your password though this may be
         reset using the “Forgotten password” link.
       </p>
-      <h3 className='text-3xl text-(--fg) mb-2 mt-8'>PROHIBITED ACTIVITIES</h3>
+      <h2 className='text-3xl text-(--fg) mb-2 mt-8'>PROHIBITED ACTIVITIES</h2>
       <p className='mb-1'>
         You may not access or use the App for any purpose other than that for
         which we make the App available. The App may not be used in connection
         with any commercial endeavours except those that are specifically
         endorsed or approved by us. As a user of the App, you agree not to:
       </p>
-      <ol>
+      <ol className='list-decimal space-y-2 pl-6 text-md font-outfit-light'>
         <li>
-          (1) systematically retrieve data or other content from the App to
-          create or compile, directly or indirectly, a collection, compilation,
+          systematically retrieve data or other content from the App to create
+          or compile, directly or indirectly, a collection, compilation,
           database, or directory without written permission from us.
         </li>
         <li>
-          (2) make any unauthorized use of the App, including collecting
-          usernames and/or email addresses of users by electronic or other means
-          for the purpose of sending unsolicited email, or creating user
-          accounts by automated means or under false pretences.
+          make any unauthorized use of the App, including collecting usernames
+          and/or email addresses of users by electronic or other means for the
+          purpose of sending unsolicited email, or creating user accounts by
+          automated means or under false pretences.
         </li>
+        <li>use the App to advertise or offer to sell goods and services.</li>
         <li>
-          (3) use the App to advertise or offer to sell goods and services.
-        </li>
-        <li>
-          (4) circumvent, disable, or otherwise interfere with security-related
+          circumvent, disable, or otherwise interfere with security-related
           features of the App, including features that prevent or restrict the
           use or copying of any Content or enforce limitations on the use of the
           App and/or the Content contained therein.
         </li>
-        <li>(5) engage in unauthorized framing of or linking to the App.</li>
+        <li>engage in unauthorized framing of or linking to the App.</li>
         <li>
-          (6) trick, defraud, or mislead us and other users, especially in any
+          trick, defraud, or mislead us and other users, especially in any
           attempt to learn sensitive account information such as user passwords.
         </li>
-        <li>(7) make improper use of our support services.</li>
+        <li>make improper use of our support services.</li>
         <li>
-          (8) engage in any automated use of the system, such as using scripts
-          to send comments or messages, or using any data mining, robots, or
+          engage in any automated use of the system, such as using scripts to
+          send comments or messages, or using any data mining, robots, or
           similar data gathering and extraction tools.
         </li>
         <li>
-          (9) interfere with, disrupt, or create an undue burden on the App or
-          the networks or services connected to the App.
+          interfere with, disrupt, or create an undue burden on the App or the
+          networks or services connected to the App.
         </li>
         <li>
-          (10) attempt to impersonate another user or person or use the username
-          of another user.
+          attempt to impersonate another user or person or use the username of
+          another user.
         </li>
-        <li>(11) sell or otherwise transfer your profile.</li>
+        <li> sell or otherwise transfer your profile.</li>
         <li>
-          (12) use any information obtained from the App in order to harass,
-          abuse, or harm another person.
+          use any information obtained from the App in order to harass, abuse,
+          or harm another person.
         </li>
         <li>
-          (13) use the App as part of any effort to compete with us or otherwise
-          use the App and/or the Content for any revenue-generating endeavour or
+          use the App as part of any effort to compete with us or otherwise use
+          the App and/or the Content for any revenue-generating endeavour or
           commercial enterprise.
         </li>
         <li>
-          (14) decipher, decompile, disassemble, or reverse engineer any of the
+          decipher, decompile, disassemble, or reverse engineer any of the
           software comprising or in any way making up a part of the App.
         </li>
+        <li>(15) restrict access to the App, or any portion of the App.</li>
         <li>
-          (15) attempt to bypass any measures of the App designed to prevent or
-          restrict access to the App, or any portion of the App.
+          harass, annoy, intimidate, or threaten any of our employees or agents
+          engaged in providing any portion of the App to you.
         </li>
         <li>
-          (16) harass, annoy, intimidate, or threaten any of our employees or
-          agents engaged in providing any portion of the App to you.
-        </li>
-        <li>
-          (17) delete the copyright or other proprietary rights notice from any
+          delete the copyright or other proprietary rights notice from any
           Content.
         </li>
-        <li>(18) copy or adapt the App’s software.</li>
+        <li> copy or adapt the App’s software.</li>
         <li>
-          (19) upload or transmit (or attempt to upload or to transmit) viruses,
+          upload or transmit (or attempt to upload or to transmit) viruses,
           Trojan horses, or other material, including excessive use of capital
           letters and spamming (continuous posting of repetitive text), that
           interferes with any party’s uninterrupted use and enjoyment of the App
@@ -137,33 +132,33 @@ const Terms: React.FC = (): JSX.Element => {
           features, functions, operation, or maintenance of the App.
         </li>
         <li>
-          20) upload or transmit (or attempt to upload or to transmit) any
-          material that acts as a passive or active information collection or
+          upload or transmit (or attempt to upload or to transmit) any material
+          that acts as a passive or active information collection or
           transmission mechanism, including without limitation, clear graphics
           interchange formats (“gifs”), 1×1 pixels, web bugs, cookies, or other
           similar devices (sometimes referred to as “spyware” or “passive
           collection mechanisms” or “pcms”).
         </li>
         <li>
-          21) except as may be the result of standard search engine or Internet
+          except as may be the result of standard search engine or Internet
           browser usage, use, launch, develop, or distribute any automated
           system, including without limitation, any spider, robot, cheat
           utility, scraper, or offline reader that accesses the App, or using or
           launching any unauthorized script or other software.
         </li>
         <li>
-          22) disparage, tarnish, or otherwise harm, in our opinion, us and/or
-          the App.
+          disparage, tarnish, or otherwise harm, in our opinion, us and/or the
+          App.
         </li>
         <li>
-          23) use the App in a manner inconsistent with any applicable laws or
+          use the App in a manner inconsistent with any applicable laws or
           regulations.
         </li>
       </ol>
 
-      <h3 className='text-3xl text-(--fg) mb-2 mt-8'>
+      <h2 className='text-3xl text-(--fg) mb-2 mt-8'>
         MOBILE APPLICATION LICENSE
-      </h3>
+      </h2>
       <p className='mb-1'>
         Use License If you access the App via a mobile application, then we
         grant you a revocable, non-exclusive, non-transferable, limited right to
@@ -173,64 +168,62 @@ const Terms: React.FC = (): JSX.Element => {
         this mobile application license contained in these Terms and Conditions
         You shall not:
       </p>
-      <ol>
+      <ol className='list-decimal space-y-2 pl-6 text-md font-outfit-light'>
         <li>
-          (1) decompile, reverse engineer, disassemble, attempt to derive the
-          source code of, or decrypt the App.
+          decompile, reverse engineer, disassemble, attempt to derive the source
+          code of, or decrypt the App.
         </li>
         <li>
-          (2) make any modification, adaptation, improvement, enhancement,
+          make any modification, adaptation, improvement, enhancement,
           translation, or derivative work from the App.
         </li>
         <li>
-          (3) violate any applicable laws, rules, or regulations in connection
-          with your access or use of the App.
+          violate any applicable laws, rules, or regulations in connection with
+          your access or use of the App.
         </li>
         <li>
-          (4) remove, alter, or obscure any proprietary notice (including any
-          notice of copyright or trademark) posted by us or the licensors of the
-          App.
+          remove, alter, or obscure any proprietary notice (including any notice
+          of copyright or trademark) posted by us or the licensors of the App.
         </li>
         <li>
-          (5) use the application for any revenue generating endeavour,
-          commercial enterprise, or other purpose for which it is not designed
-          or intended.
+          use the application for any revenue generating endeavour, commercial
+          enterprise, or other purpose for which it is not designed or intended.
         </li>
         <li>
-          (6) make the application available over a network or other environment
+          make the application available over a network or other environment
           permitting access or use by multiple devices or users at the same
           time.
         </li>
       </ol>
 
-      <h3 className='text-3xl text-(--fg) mb-2 mt-8'>
+      <h2 className='text-3xl text-(--fg) mb-2 mt-8'>
         APPLE AND ANDROID DEVICES
-      </h3>
+      </h2>
       <p className='mb-1'>
         The following terms apply when you use a mobile application obtained
         from either the Apple Store or Google Play (each an “App Distributor”)
         to access the App:
       </p>
-      <ol>
+      <ol className='list-decimal space-y-2 pl-6 text-md font-outfit-light'>
         <li>
-          (1) the license granted to you for our mobile application is limited
-          to a non-transferable license to use the application on a device that
+          the license granted to you for our mobile application is limited to a
+          non-transferable license to use the application on a device that
           utilizes the Apple iOS or Android operating systems, as applicable,
           and in accordance with the usage rules set forth in the applicable App
           Distributor’s terms and conditions.
         </li>
         <li>
-          (2) we are responsible for providing any maintenance and support
-          services with respect to the mobile application as specified in the
-          terms and conditions of this mobile application license contained in
-          these Terms and Conditions or as otherwise required under applicable
-          law, and you acknowledge that each App Distributor has no obligation
-          whatsoever to furnish any maintenance and support services with
-          respect to the mobile application.
+          we are responsible for providing any maintenance and support services
+          with respect to the mobile application as specified in the terms and
+          conditions of this mobile application license contained in these Terms
+          and Conditions or as otherwise required under applicable law, and you
+          acknowledge that each App Distributor has no obligation whatsoever to
+          furnish any maintenance and support services with respect to the
+          mobile application.
         </li>
         <li>
-          (3) in the event of any failure of the mobile application to conform
-          to any applicable warranty, you may notify the applicable App
+          in the event of any failure of the mobile application to conform to
+          any applicable warranty, you may notify the applicable App
           Distributor, and the App Distributor, in accordance with its terms and
           policies, may refund the purchase price, if any, paid for the mobile
           application, and to the maximum extent permitted by applicable law,
@@ -238,30 +231,30 @@ const Terms: React.FC = (): JSX.Element => {
           with respect to the mobile application.
         </li>
         <li>
-          (4) you represent and warrant that (i) you are not located in a
-          country that is subject to a U.S. government embargo, or that has been
+          you represent and warrant that (i) you are not located in a country
+          that is subject to a U.S. government embargo, or that has been
           designated by the U.S. government as a “terrorist supporting” country
           and (ii) you are not listed on any U.S. government list of prohibited
           or restricted parties.
         </li>
         <li>
-          (5) you must comply with applicable third-party terms of agreement
-          when using the mobile application, e.g., if you have a VoIP
-          application, then you must not be in violation of their wireless data
-          service agreement when using the mobile application.
+          you must comply with applicable third-party terms of agreement when
+          using the mobile application, e.g., if you have a VoIP application,
+          then you must not be in violation of their wireless data service
+          agreement when using the mobile application.
         </li>
         <li>
-          (6) you acknowledge and agree that the App Distributors are
-          third-party beneficiaries of the terms and conditions in this mobile
-          application license contained in these Terms and Conditions, and that
-          each App Distributor will have the right (and will be deemed to have
-          accepted the right) to enforce the terms and conditions in this mobile
+          you acknowledge and agree that the App Distributors are third-party
+          beneficiaries of the terms and conditions in this mobile application
+          license contained in these Terms and Conditions, and that each App
+          Distributor will have the right (and will be deemed to have accepted
+          the right) to enforce the terms and conditions in this mobile
           application license contained in these Terms and Conditions against
           you as a third-party beneficiary thereof.
         </li>
       </ol>
 
-      <h3 className='text-3xl text-(--fg) mb-2 mt-8'>SUBMISSIONS</h3>
+      <h2 className='text-3xl text-(--fg) mb-2 mt-8'>SUBMISSIONS</h2>
       <p className='text-md'>
         You acknowledge and agree that any questions, comments, suggestions,
         ideas, feedback, or other information regarding the App (“Submissions”)
@@ -276,7 +269,7 @@ const Terms: React.FC = (): JSX.Element => {
         against us for any alleged or actual infringement or misappropriation of
         any proprietary right in your Submissions.
       </p>
-      <h3 className='text-3xl text-(--fg) mb-2 mt-8'>ADVERTISERS</h3>
+      <h2 className='text-3xl text-(--fg) mb-2 mt-8'>ADVERTISERS</h2>
       <p className='text-md'>
         We allow advertisers to display their advertisements and other
         information in certain areas of the App, such as sidebar advertisements
@@ -291,37 +284,33 @@ const Terms: React.FC = (): JSX.Element => {
         advertisers.
       </p>
 
-      <h3 className='text-3xl text-(--fg) mb-2 mt-8'>APP MANAGEMENT</h3>
+      <h2 className='text-3xl text-(--fg) mb-2 mt-8'>APP MANAGEMENT</h2>
       <p className='mb-1'>We reserve the right, but not the obligation, to:</p>
-      <ol>
+      <ol className='list-decimal space-y-2 pl-6 text-md font-outfit-light'>
+        <li>monitor the App for violations of these Terms and Conditions.</li>
         <li>
-          (1) monitor the App for violations of these Terms and Conditions.
-        </li>
-        <li>
-          (2) take appropriate legal action against anyone who, in our sole
+          take appropriate legal action against anyone who, in our sole
           discretion, violates the law or these Terms and Conditions, including
           without limitation, reporting such user to law enforcement
           authorities.
         </li>
         <li>
-          (3) in our sole discretion and without limitation, refuse, restrict
-          access to, limit the availability of, or disable (to the extent
+          in our sole discretion and without limitation, refuse, restrict access
+          to, limit the availability of, or disable (to the extent
           technologically feasible) any of your Contributions or any portion
           thereof.
         </li>
         <li>
-          (4) in our sole discretion and without limitation, notice, or
-          liability, to remove from the App or otherwise disable all files and
-          content that are excessive in size or are in any way burdensome to our
-          systems.
+          in our sole discretion and without limitation, notice, or liability,
+          to remove from the App or otherwise disable all files and content that
+          are excessive in size or are in any way burdensome to our systems.
         </li>
         <li>
-          (5) otherwise manage the App in a manner designed to protect our
-          rights and property and to facilitate the proper functioning of the
-          App.
+          otherwise manage the App in a manner designed to protect our rights
+          and property and to facilitate the proper functioning of the App.
         </li>
       </ol>
-      <h3 className='text-3xl text-(--fg) mb-2 mt-8'>PRIVACY POLICY</h3>
+      <h2 className='text-3xl text-(--fg) mb-2 mt-8'>PRIVACY POLICY</h2>
       <p className='text-md'>
         We care about data privacy and security. Please review our Privacy
         Policy. By using the App, you agree to be bound by our Privacy Policy,
@@ -334,9 +323,9 @@ const Terms: React.FC = (): JSX.Element => {
         the United States, and you expressly consent to have your data
         transferred to and processed in the United States.
       </p>
-      <h3 className='text-3xl text-(--fg) mb-2 mt-8'>
+      <h2 className='text-3xl text-(--fg) mb-2 mt-8'>
         COPYRIGHT INFRINGEMENTS
-      </h3>
+      </h2>
       <p className='text-md'>
         We respect the intellectual property rights of others. If you believe
         that any material available on or through the App infringes upon any
@@ -349,7 +338,7 @@ const Terms: React.FC = (): JSX.Element => {
         material located on or linked to by the App infringes your copyright,
         you should consider first contacting an attorney.
       </p>
-      <h3 className='text-3xl text-(--fg) mb-2 mt-8'>TERM AND TERMINATION</h3>
+      <h2 className='text-3xl text-(--fg) mb-2 mt-8'>TERM AND TERMINATION</h2>
       <p className='text-md'>
         These Terms and Conditions shall remain in full force and effect while
         you use the App. WITHOUT LIMITING ANY OTHER PROVISION OF THESE TERMS AND
@@ -369,9 +358,9 @@ const Terms: React.FC = (): JSX.Element => {
         including without limitation pursuing civil, criminal, and injunctive
         redress.
       </p>
-      <h3 className='text-3xl text-(--fg) mb-2 mt-8'>
+      <h2 className='text-3xl text-(--fg) mb-2 mt-8'>
         MODIFICATIONS AND INTERRUPTIONS
-      </h3>
+      </h2>
       <p className='text-md'>
         We reserve the right to change, modify, or remove the contents of the
         App at any time or for any reason at our sole discretion without notice.
@@ -391,7 +380,7 @@ const Terms: React.FC = (): JSX.Element => {
         obligate us to maintain and support the App or to supply any
         corrections, updates, or releases in connection therewith.
       </p>
-      <h3 className='text-3xl text-(--fg) mb-2 mt-8'>CORRECTIONS</h3>
+      <h2 className='text-3xl text-(--fg) mb-2 mt-8'>CORRECTIONS</h2>
       <p className='text-md'>
         There may be information on the App that contains typographical errors,
         inaccuracies, or omissions that may relate to the App, including
@@ -400,7 +389,7 @@ const Terms: React.FC = (): JSX.Element => {
         to change or update the information on the App at any time, without
         prior notice.
       </p>
-      <h3 className='text-3xl text-(--fg) mb-2 mt-8'>DISCLAIMER</h3>
+      <h2 className='text-3xl text-(--fg) mb-2 mt-8'>DISCLAIMER</h2>
       <p className='text-md'>
         THE APP IS PROVIDED ON AN AS-IS AND AS-AVAILABLE BASIS. YOU AGREE THAT
         YOUR USE OF THE APP AND OUR SERVICES WILL BE AT YOUR SOLE RISK. TO THE
@@ -430,9 +419,9 @@ const Terms: React.FC = (): JSX.Element => {
         PRODUCT OR SERVICE THROUGH ANY MEDIUM OR IN ANY ENVIRONMENT, YOU SHOULD
         USE YOUR BEST JUDGMENT AND EXERCISE CAUTION WHERE APPROPRIATE.
       </p>
-      <h3 className='text-3xl text-(--fg) mb-2 mt-8'>
+      <h2 className='text-3xl text-(--fg) mb-2 mt-8'>
         LIMITATIONS OF LIABILITY
-      </h3>
+      </h2>
       <p className='text-md'>
         IN NO EVENT WILL WE OR OUR DIRECTORS, EMPLOYEES, OR AGENTS BE LIABLE TO
         YOU OR ANY THIRD PARTY FOR ANY DIRECT, INDIRECT, CONSEQUENTIAL,
@@ -441,7 +430,7 @@ const Terms: React.FC = (): JSX.Element => {
         USE OF THE APP, EVEN IF WE HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH
         DAMAGES.
       </p>
-      <h3 className='text-3xl text-(--fg) mb-2 mt-8'>USER DATA</h3>
+      <h2 className='text-3xl text-(--fg) mb-2 mt-8'>USER DATA</h2>
       <p className='text-md'>
         We will maintain certain data that you transmit to the App for the
         purpose of managing the App, as well as data relating to your use of the
@@ -452,9 +441,9 @@ const Terms: React.FC = (): JSX.Element => {
         hereby waive any right of action against us arising from any such loss
         or corruption of such data.
       </p>
-      <h3 className='text-3xl text-(--fg) mb-2 mt-8'>
+      <h2 className='text-3xl text-(--fg) mb-2 mt-8'>
         ELECTRONIC COMMUNICATIONS, TRANSACTIONS, AND SIGNATURES
-      </h3>
+      </h2>
       <p className='text-md'>
         Visiting the App, sending us emails, and completing online forms
         constitute electronic communications. You consent to receive electronic
@@ -463,11 +452,11 @@ const Terms: React.FC = (): JSX.Element => {
         on the App, satisfy any legal requirement that such communication be in
         writing.
       </p>
-      <h3 className='text-3xl text-(--fg) mb-2 mt-8'>
+      <h2 className='text-3xl text-(--fg) mb-2 mt-8'>
         YOU HEREBY AGREE TO THE USE OF ELECTRONIC SIGNATURES, CONTRACTS, ORDERS,
         AND OTHER RECORDS, AND TO ELECTRONIC DELIVERY OF NOTICES, POLICIES, AND
         RECORDS OF TRANSACTIONS INITIATED OR COMPLETED BY US OR VIA THE APP.
-      </h3>
+      </h2>
       <p className='text-md'>
         You hereby waive any rights or requirements under any statutes,
         regulations, rules, ordinances, or other laws in any jurisdiction which
@@ -475,7 +464,7 @@ const Terms: React.FC = (): JSX.Element => {
         records, or to payments or the granting of credits by any means other
         than electronic means.
       </p>
-      <h3 className='text-3xl text-(--fg) mb-2 mt-8'>MISCELLANEOUS</h3>
+      <h2 className='text-3xl text-(--fg) mb-2 mt-8'>MISCELLANEOUS</h2>
       <p className='text-md'>
         These Terms and Conditions and any policies or operating rules posted by
         us on the App constitute the entire agreement and understanding between

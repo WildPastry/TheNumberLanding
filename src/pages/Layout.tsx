@@ -7,15 +7,20 @@ import ScrollToTop from '../components/ScrollToTop';
 
 const Layout: React.FC = (): JSX.Element => {
   return (
-    <main className='h-full w-full flex flex-col'>
+    <div className='h-full w-full flex flex-col'>
+      {/* Behaviours */}
       <AutomaticScrollToTop />
       <ScrollToTop />
+      {/* Landmarks */}
       <Header />
-      <section className='flex-auto p-5'>
+      <main
+        aria-label='Main content'
+        className='flex-auto p-5'
+        id='main-content'>
         <Outlet />
-      </section>
+      </main>
       <Footer />
-    </main>
+    </div>
   );
 };
 
