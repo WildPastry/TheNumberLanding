@@ -8,7 +8,7 @@ const Badges: React.FC = (): JSX.Element => {
   return (
     <section
       aria-label='Download links'
-      className='flex gap-8 justify-center mb-28'>
+      className='flex gap-8 justify-center mb-40'>
       {/* Apple */}
       <a
         aria-label='Download on the App Store (opens in a new tab)'

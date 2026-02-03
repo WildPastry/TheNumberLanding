@@ -1,6 +1,5 @@
 @import url('fonts.css');
 @import 'tailwindcss';
-@tailwind utilities;
 
 @theme {
   /* Brand / unchanging */
@@ -26,12 +25,8 @@
   --font-outfit-bold: OutfitBold, sans-serif;
   --font-outfit-light: OutfitLight, sans-serif;
 
-  /* Text sizes */
-  --text-100: 100px;
-  --text-150: 150px;
-  --text-200: 200px;
-  --text-250: 250px;
-  --text-300: 300px;
+  /* Media queries */
+  --breakpoint-600: 600px;
 }
 
 /* Light theme */
