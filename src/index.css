@@ -70,6 +70,10 @@ p {
   font-family: var(--font-outfit);
 }
 
+p {
+  letter-spacing: 0.5px;
+}
+
 h2,
 h3 {
   letter-spacing: 0.5px;
