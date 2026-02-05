@@ -2,9 +2,15 @@ import React, { memo, useEffect, useState } from 'react';
 import { IoArrowUp } from 'react-icons/io5';
 
 const ScrollToTop: React.FC = () => {
+  // Dependencies
   const [isVisible, setIsVisible] = useState<boolean>(false);
 
   useEffect(() => {
+    /**
+     * Sets the isVisible state based on the current scroll position.
+     * If the scroll position is greater than or equal to 200, sets isVisible to true.
+     * Otherwise, sets isVisible to false.
+     */
     const onScroll = () => {
       setIsVisible(window.scrollY >= 200);
     };

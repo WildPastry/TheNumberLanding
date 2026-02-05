@@ -2,9 +2,20 @@ import type { JSX } from 'react';
 import { useLocation } from 'react-router-dom';
 
 const Footer: React.FC = (): JSX.Element => {
+  // Dependencies
   const currentDate: number = new Date().getFullYear();
   const { pathname }: { pathname: string } = useLocation();
 
+  /**
+   * Returns a tailwind class string for the hover effect
+   * based on the current URL path.
+   *
+   * @returns {string} A tailwind class string for the hover effect.
+   *
+   * If the current URL path is '/terms', returns 'hover:text-berry'.
+   * If the current URL path is '/privacy', returns 'hover:text-strawberry'.
+   * Otherwise, returns 'hover:text-water'.
+   */
   const getHoverClass = (): string => {
     if (pathname === '/terms') return 'hover:text-berry';
     if (pathname === '/privacy') return 'hover:text-strawberry';

@@ -5,6 +5,7 @@ import { joinClass } from '../utils/joinClass';
 import { useTheme } from '../theme/useTheme';
 
 const ThemeToggleButton: React.FC = () => {
+  // Dependencies
   const { theme, toggle } = useTheme();
   const next: string = theme === 'dark' ? 'light' : 'dark';
 
