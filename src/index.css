@@ -69,6 +69,10 @@ p {
   letter-spacing: 0.5px;
 }
 
+h1 {
+  font-family: var(--font-cubano);
+}
+
 h2,
 h3 {
   letter-spacing: 0.5px;

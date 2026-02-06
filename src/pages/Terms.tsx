@@ -4,7 +4,7 @@ import type { JSX } from 'react';
 const Terms: React.FC = (): JSX.Element => {
   return (
     <section aria-labelledby='terms-title' className='max-w-4xl m-auto'>
-      <h1 className='text-berry font-cubano text-5xl mb-10' id='terms-title'>
+      <h1 className='text-berry text-5xl mb-10' id='terms-title'>
         TERMS AND CONDITIONS
       </h1>
       <p className='text-xl mb-4'>

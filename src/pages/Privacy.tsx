@@ -3,9 +3,7 @@ import type { JSX } from 'react';
 const Privacy: React.FC = (): JSX.Element => {
   return (
     <section aria-labelledby='privacy-title' className='max-w-4xl m-auto'>
-      <h1
-        className='text-strawberry font-cubano text-5xl mb-10'
-        id='privacy-title'>
+      <h1 className='text-strawberry text-5xl mb-10' id='privacy-title'>
         PRIVACY STATEMENT
       </h1>
       <p className='text-xl'>
