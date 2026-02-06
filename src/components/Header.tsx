@@ -1,5 +1,6 @@
+import { NavLink, useNavigate } from 'react-router-dom';
+import { FaInfinity } from 'react-icons/fa6';
 import type { JSX } from 'react';
-import { NavLink } from 'react-router-dom';
 import ThemeToggle from './ThemeToggle';
 
 type NavLinkMenuItem = {
@@ -32,10 +33,24 @@ const LINKS: readonly NavLinkMenuItem[] = [
 ];
 
 const Header: React.FC = (): JSX.Element => {
+  const navigate = useNavigate();
+
+  const handleLogoClick = () => {
+    Promise.resolve(navigate('/home')).catch(() => undefined);
+  };
+
   return (
-    <header className='flex justify-between p-5'>
+    <header className='flex justify-between items-center p-5'>
+      <button
+        aria-label='The Number Logo'
+        className='cursor-pointer text-flame hover:text-watermelon'
+        onClick={handleLogoClick}
+        title='The Number Logo'>
+        <FaInfinity size={30} />
+      </button>
+      {/* Navigation */}
       <nav aria-label='Primary navigation'>
-        <ul className='font-outfit-bold text-xl flex flex-col gap-2'>
+        <ul className='font-outfit-bold text-xl flex flex-row gap-5'>
           {LINKS.map(
             ({
               activeClass,
