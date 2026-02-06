@@ -36,6 +36,7 @@
   --fg: var(--color-primary-dark);
   --surface: var(--color-secondary-light);
   --main-banner: var(--color-berry);
+  --accent: var(--color-lime);
 }
 
 /* Dark theme */
@@ -45,6 +46,7 @@
   --fg: var(--color-primary-light);
   --surface: var(--color-secondary-dark);
   --main-banner: var(--color-lemon);
+  --accent: var(--color-flame);
 }
 
 html,
@@ -70,6 +72,7 @@ p {
 }
 
 h1 {
+  letter-spacing: 0.5px;
   font-family: var(--font-cubano);
 }
 
