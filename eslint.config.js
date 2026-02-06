@@ -11,9 +11,8 @@ const tsconfigRootDir = fileURLToPath(new URL('.', import.meta.url));
 
 export default defineConfig([
   globalIgnores(['dist', '**/*.spec.tsx']),
-
+  // Custom config
   ...wildpastryConfig,
-
   // App (browser) files → tsconfig.app.json
   {
     extends: [
@@ -31,7 +30,6 @@ export default defineConfig([
       }
     }
   },
-
   // Node/tooling files → tsconfig.node.json
   {
     files: [

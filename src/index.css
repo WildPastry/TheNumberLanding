@@ -1,6 +1,5 @@
 @import url('fonts.css');
 @import 'tailwindcss';
-@tailwind utilities;
 
 @theme {
   /* Brand / unchanging */
@@ -26,12 +25,8 @@
   --font-outfit-bold: OutfitBold, sans-serif;
   --font-outfit-light: OutfitLight, sans-serif;
 
-  /* Text sizes */
-  --text-100: 100px;
-  --text-150: 150px;
-  --text-200: 200px;
-  --text-250: 250px;
-  --text-300: 300px;
+  /* Media queries */
+  --breakpoint-600: 600px;
 }
 
 /* Light theme */
@@ -41,7 +36,7 @@
   --fg: var(--color-primary-dark);
   --surface: var(--color-secondary-light);
   --main-banner: var(--color-berry);
-  --privacy-banner: var(--color-flame);
+  --accent: var(--color-lime);
 }
 
 /* Dark theme */
@@ -51,7 +46,7 @@
   --fg: var(--color-primary-light);
   --surface: var(--color-secondary-dark);
   --main-banner: var(--color-lemon);
-  --privacy-banner: var(--color-watermelon);
+  --accent: var(--color-flame);
 }
 
 html,
@@ -67,9 +62,18 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+a,
+p {
+  font-family: var(--font-outfit);
+}
+
 p {
   letter-spacing: 0.5px;
-  font-family: var(--font-outfit);
+}
+
+h1 {
+  letter-spacing: 0.5px;
+  font-family: var(--font-cubano);
 }
 
 h2,
@@ -78,17 +82,15 @@ h3 {
   font-family: var(--font-bebas);
 }
 
+h4 {
+  letter-spacing: 0.5px;
+  font-family: var(--font-outfit-light);
+}
+
 a {
   text-decoration: none;
 }
 
 a.active:hover {
   cursor: default;
-}
-
-ul,
-li {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
 }
