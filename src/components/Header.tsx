@@ -1,4 +1,9 @@
-import { NavLink, useNavigate } from 'react-router-dom';
+import {
+  NavLink,
+  type NavigateFunction,
+  useLocation,
+  useNavigate
+} from 'react-router-dom';
 import { FaInfinity } from 'react-icons/fa6';
 import type { JSX } from 'react';
 import ThemeToggle from './ThemeToggle';
@@ -33,10 +38,32 @@ const LINKS: readonly NavLinkMenuItem[] = [
 ];
 
 const Header: React.FC = (): JSX.Element => {
-  const navigate = useNavigate();
+  // Dependencies
+  const navigate: NavigateFunction = useNavigate();
+  const { pathname }: { pathname: string } = useLocation();
 
+  /**
+   * Handles logo click by navigating to the home page.
+   * It catches any errors that may occur during navigation and returns undefined.
+   * @returns {Promise<void>} A promise that resolves to void.
+   */
   const handleLogoClick = () => {
     Promise.resolve(navigate('/home')).catch(() => undefined);
+  };
+
+  /**
+   * Returns a tailwind class string for the hover effect
+   * based on the current URL path.
+   *
+   * If the current URL path is '/home', returns 'cursor-default hover:text-(--accent)'.
+   * Otherwise, returns 'cursor-pointer hover:text-watermelon'.
+   *
+   * @returns {string} A tailwind class string for the hover effect.
+   */
+  const getHoverClass = (): string => {
+    return pathname === '/home'
+      ? 'cursor-default hover:text-(--accent)'
+      : 'cursor-pointer hover:text-watermelon';
   };
 
   return (
@@ -45,8 +72,8 @@ const Header: React.FC = (): JSX.Element => {
       className='flex justify-between items-center p-5 max-400:p-3 bg-(--surface) max-400:flex-col'>
       <button
         aria-label='The Number Logo'
-        className='cursor-pointer text-flame hover:text-watermelon'
-        onClick={handleLogoClick}
+        className={`text-(--accent) ${getHoverClass()}`}
+        onClick={pathname === '/home' ? undefined : handleLogoClick}
         title='The Number Logo'>
         <FaInfinity size={30} />
       </button>
@@ -80,7 +107,6 @@ const Header: React.FC = (): JSX.Element => {
           )}
         </ul>
       </nav>
-
       <ThemeToggle />
     </header>
   );
