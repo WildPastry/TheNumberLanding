@@ -3,7 +3,9 @@ import type { JSX } from 'react';
 
 const Terms: React.FC = (): JSX.Element => {
   return (
-    <section aria-labelledby='terms-title' className='max-w-4xl m-auto'>
+    <section
+      aria-labelledby='terms-title'
+      className='max-w-4xl m-auto mt-10 max-400:mt-5'>
       <h1
         className='text-berry text-5xl max-400:text-4xl mb-5'
         id='terms-title'>

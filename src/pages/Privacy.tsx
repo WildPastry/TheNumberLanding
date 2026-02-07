@@ -2,7 +2,9 @@ import type { JSX } from 'react';
 
 const Privacy: React.FC = (): JSX.Element => {
   return (
-    <section aria-labelledby='privacy-title' className='max-w-4xl m-auto'>
+    <section
+      aria-labelledby='privacy-title'
+      className='max-w-4xl m-auto mt-10 max-400:mt-5'>
       <h1
         className='text-strawberry text-5xl max-400:text-4xl mb-5'
         id='privacy-title'>
