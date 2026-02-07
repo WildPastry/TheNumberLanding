@@ -4,10 +4,12 @@ import type { JSX } from 'react';
 const Terms: React.FC = (): JSX.Element => {
   return (
     <section aria-labelledby='terms-title' className='max-w-4xl m-auto'>
-      <h1 className='text-berry text-5xl mb-10' id='terms-title'>
+      <h1
+        className='text-berry text-5xl max-400:text-4xl mb-5'
+        id='terms-title'>
         TERMS AND CONDITIONS
       </h1>
-      <p className='text-xl mb-4'>
+      <p className='text-xl max-400:text-lg max-300:text-md mb-4'>
         These Terms and Conditions constitute a legally binding agreement made
         between you, whether personally or on behalf of an entity (“you”) and
         THENUMBER (“we,” “us” or “our”), concerning your access to and use of
@@ -15,7 +17,7 @@ const Terms: React.FC = (): JSX.Element => {
         that by accessing the App, you have read, understood, and agree to be
         bound by all of these Terms and Conditions.
       </p>
-      <p className='text-xl'>
+      <p className='text-xl max-400:text-lg max-300:text-md'>
         If you do not agree with all of these Terms and Conditions, then you are
         expressly prohibited from using the App and you must discontinue use
         immediately. We reserve the right, in our sole discretion, to make
@@ -23,7 +25,10 @@ const Terms: React.FC = (): JSX.Element => {
         for any reason. We will alert you about any changes by email, and you
         waive any right to receive specific notice of each such change.
       </p>
-      <hr aria-hidden='true' className='h-px my-10 bg-berry border-0' />
+      <hr
+        aria-hidden='true'
+        className='h-px my-10 max-400:my-5 bg-berry border-0'
+      />
       <h2 className='text-3xl text-berry mb-2'>INTELLECTUAL PROPERTY RIGHTS</h2>
       <p className='text-md'>
         Unless otherwise indicated, the App is our proprietary property and all
