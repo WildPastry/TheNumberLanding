@@ -1,0 +1,19 @@
+name: Create label
+run-name: Create label | ${{ github.run_id }} | branch - ${{ github.head_ref }}
+
+on:
+  pull_request_target:
+
+jobs:
+  create-label:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+      issues: write
+
+    steps:
+      - name: Create label
+        uses: actions/labeler@v6
+        with:
+          configuration-path: .github/labeler.yml
