@@ -15,7 +15,7 @@ const Layout: React.FC = (): JSX.Element => {
       <Header />
       <main
         aria-label='Main content'
-        className='flex-auto p-5'
+        className='flex-auto p-5 max-400:p-3'
         id='main-content'>
         <Outlet />
       </main>

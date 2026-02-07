@@ -12,7 +12,7 @@ const ThemeToggleButton: React.FC = () => {
   return (
     <button
       aria-label={`Switch to ${next} mode`}
-      className={joinClass(iconButtonBase, focusRing)}
+      className={joinClass(iconButtonBase, focusRing, 'max-400:hidden')}
       onClick={toggle}
       title={`Switch to ${next} mode`}>
       {theme === 'dark' ? <IoSunny size={22} /> : <IoMoon size={22} />}

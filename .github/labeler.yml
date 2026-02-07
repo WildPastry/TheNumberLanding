@@ -1,0 +1,61 @@
+# Add 'root' label to any root file changes
+root:
+  - changed-files:
+      - any-glob-to-any-file: "*"
+
+# Add 'react' label to any change to .tsx files within the entire repository
+react:
+  - changed-files:
+      - any-glob-to-any-file: "**/*.tsx"
+
+# Add 'api' label to changed files in the api folder
+api:
+  - changed-files:
+      - any-glob-to-any-file: "/api/**/*"
+
+# Add 'assets' label to changed files in the assets folder
+assets:
+  - changed-files:
+      - any-glob-to-any-file: "/assets/**/*"
+
+# Add 'workflow' label to changed files in the workflows folder
+workflow:
+  - changed-files:
+      - any-glob-to-any-file: ".github/workflows/**/*"
+
+# Add 'nav' label to changed files in the nav folder
+nav:
+  - changed-files:
+      - any-glob-to-any-file: "/navigation/**/*"
+
+# Add 'release' label to any PR where the head branch name starts with `release` or has a `release` section in the name
+release:
+  - head-branch: ["^release", "release"]
+
+# Mapping for conventional commit style headings to labels
+bug:
+  - head-branch: ["^fix/?", "bug"]
+
+documentation:
+  - head-branch: ["^docs/?", "documentation"]
+
+style:
+  - head-branch: ["^style/?", "style"]
+
+refactor:
+  - head-branch: ["^refactor/?", "refactor"]
+
+performance:
+  - head-branch: ["^perf/?", "performance"]
+
+test:
+  - head-branch: ["^test/?", "test"]
+
+build:
+  - head-branch: ["^build/?", "build"]
+
+maintenance:
+  - head-branch: ["^ci/?", "maintenance", "^chore/?", "maintenance"]
+
+revert:
+  - head-branch: ["^revert/?", "revert"]
