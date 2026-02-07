@@ -105,7 +105,9 @@ const TheNumber: React.FC = (): JSX.Element => {
         type='button'>
         <FaRegTrashAlt size={24} />
       </button>
-      <h1 aria-live='polite' className='text-9xl'>
+      <h1
+        aria-live='polite'
+        className='text-9xl max-400:text-8xl max-300:text-7xl'>
         {value.toLocaleString()}
       </h1>
       <h5 className='font-outfit-bold text-(--fg) text-3xl'>Days</h5>

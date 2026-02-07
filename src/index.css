@@ -27,6 +27,8 @@
 
   /* Media queries */
   --breakpoint-600: 600px;
+  --breakpoint-400: 400px;
+  --breakpoint-300: 300px;
 }
 
 /* Light theme */

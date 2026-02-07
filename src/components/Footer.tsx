@@ -24,7 +24,7 @@ const Footer: React.FC = (): JSX.Element => {
 
   return (
     <footer aria-label='Site footer'>
-      <div className='inline-flex gap-1 p-5 bg-(--surface) border-r-4 border-(--accent)'>
+      <div className='inline-flex gap-1 p-5 max-400:p-3 bg-(--surface) border-r-4 border-(--accent)'>
         <p className='text-md'>© {currentDate}</p>
         <a
           aria-label='Mike Parker website (opens in a new tab)'

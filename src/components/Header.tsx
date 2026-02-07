@@ -42,7 +42,7 @@ const Header: React.FC = (): JSX.Element => {
   return (
     <header
       aria-label='Site header'
-      className='flex justify-between items-center p-5 bg-(--surface)'>
+      className='flex justify-between items-center p-5 max-400:p-3 bg-(--surface) max-400:flex-col'>
       <button
         aria-label='The Number Logo'
         className='cursor-pointer text-flame hover:text-watermelon'
