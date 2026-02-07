@@ -19,9 +19,7 @@ const Home: React.FC = (): JSX.Element => {
           </h2>
         </div>
         {/* Title */}
-        <h1
-          className='flex items-center gap-2 max-600:gap-1 mb-5'
-          id='home-title'>
+        <h1 className='flex items-center gap-2 max-600:gap-1' id='home-title'>
           <span className='font-bebas pt-4 text-(--fg) text-6xl max-600:text-5xl'>
             THE
           </span>
