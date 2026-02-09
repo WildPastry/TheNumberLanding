@@ -11,7 +11,7 @@ const Home: React.FC = (): JSX.Element => {
         <TheNumber />
         <Badges />
       </div>
-      <div className='flex flex-col justify-end items-end'>
+      <div className='flex flex-col justify-end items-end mt-5'>
         {/* Sub title */}
         <div className='bg-(--main-banner) py-2 px-3 max-600:py-1 max-600:px-2'>
           <h2 className='font-bebas text-(--bg) pt-1 text-4xl max-600:text-3xl max-400:text-2xl'>
