@@ -11,7 +11,7 @@ const Terms: React.FC = (): JSX.Element => {
         id='terms-title'>
         TERMS AND CONDITIONS
       </h1>
-      <p className='text-xl max-400:text-lg max-300:text-md mb-4'>
+      <p className='text-xl max-400:text-lg max-300:text-base mb-4'>
         These Terms and Conditions constitute a legally binding agreement made
         between you, whether personally or on behalf of an entity (“you”) and
         THENUMBER (“we,” “us” or “our”), concerning your access to and use of
@@ -19,7 +19,7 @@ const Terms: React.FC = (): JSX.Element => {
         that by accessing the App, you have read, understood, and agree to be
         bound by all of these Terms and Conditions.
       </p>
-      <p className='text-xl max-400:text-lg max-300:text-md'>
+      <p className='text-xl max-400:text-lg max-300:text-base'>
         If you do not agree with all of these Terms and Conditions, then you are
         expressly prohibited from using the App and you must discontinue use
         immediately. We reserve the right, in our sole discretion, to make
@@ -32,7 +32,7 @@ const Terms: React.FC = (): JSX.Element => {
         className='h-px my-10 max-400:my-5 bg-berry border-0'
       />
       <h2 className='text-3xl text-berry mb-2'>INTELLECTUAL PROPERTY RIGHTS</h2>
-      <p className='text-md'>
+      <p className='text-base'>
         Unless otherwise indicated, the App is our proprietary property and all
         source code, databases, functionality, software, designs, audio, video,
         text, photographs, and graphics on the App (collectively, the “Content”)
@@ -53,7 +53,7 @@ const Terms: React.FC = (): JSX.Element => {
         and the Marks.
       </p>
       <h2 className='text-3xl text-berry mb-2 mt-8'>USER REGISTRATION</h2>
-      <p className='text-md'>
+      <p className='text-base'>
         You may register with the App. You agree to keep your password
         confidential and will be responsible for all use of your account and
         password. We do not have access to your password though this may be
@@ -66,7 +66,7 @@ const Terms: React.FC = (): JSX.Element => {
         with any commercial endeavours except those that are specifically
         endorsed or approved by us. As a user of the App, you agree not to:
       </p>
-      <ol className='list-decimal space-y-2 pl-6 text-md font-outfit-light'>
+      <ol className='list-decimal space-y-2 pl-6 text-base font-outfit-light'>
         <li>
           systematically retrieve data or other content from the App to create
           or compile, directly or indirectly, a collection, compilation,
@@ -173,7 +173,7 @@ const Terms: React.FC = (): JSX.Element => {
         this mobile application license contained in these Terms and Conditions
         You shall not:
       </p>
-      <ol className='list-decimal space-y-2 pl-6 text-md font-outfit-light'>
+      <ol className='list-decimal space-y-2 pl-6 text-base font-outfit-light'>
         <li>
           decompile, reverse engineer, disassemble, attempt to derive the source
           code of, or decrypt the App.
@@ -209,7 +209,7 @@ const Terms: React.FC = (): JSX.Element => {
         from either the Apple Store or Google Play (each an “App Distributor”)
         to access the App:
       </p>
-      <ol className='list-decimal space-y-2 pl-6 text-md font-outfit-light'>
+      <ol className='list-decimal space-y-2 pl-6 text-base font-outfit-light'>
         <li>
           the license granted to you for our mobile application is limited to a
           non-transferable license to use the application on a device that
@@ -260,7 +260,7 @@ const Terms: React.FC = (): JSX.Element => {
       </ol>
 
       <h2 className='text-3xl text-berry mb-2 mt-8'>SUBMISSIONS</h2>
-      <p className='text-md'>
+      <p className='text-base'>
         You acknowledge and agree that any questions, comments, suggestions,
         ideas, feedback, or other information regarding the App (“Submissions”)
         provided by you to us are non-confidential and shall become our sole
@@ -275,7 +275,7 @@ const Terms: React.FC = (): JSX.Element => {
         any proprietary right in your Submissions.
       </p>
       <h2 className='text-3xl text-berry mb-2 mt-8'>ADVERTISERS</h2>
-      <p className='text-md'>
+      <p className='text-base'>
         We allow advertisers to display their advertisements and other
         information in certain areas of the App, such as sidebar advertisements
         or banner advertisements. If you are an advertiser, you shall take full
@@ -291,7 +291,7 @@ const Terms: React.FC = (): JSX.Element => {
 
       <h2 className='text-3xl text-berry mb-2 mt-8'>APP MANAGEMENT</h2>
       <p className='mb-1'>We reserve the right, but not the obligation, to:</p>
-      <ol className='list-decimal space-y-2 pl-6 text-md font-outfit-light'>
+      <ol className='list-decimal space-y-2 pl-6 text-base font-outfit-light'>
         <li>monitor the App for violations of these Terms and Conditions.</li>
         <li>
           take appropriate legal action against anyone who, in our sole
@@ -316,7 +316,7 @@ const Terms: React.FC = (): JSX.Element => {
         </li>
       </ol>
       <h2 className='text-3xl text-berry mb-2 mt-8'>PRIVACY POLICY</h2>
-      <p className='text-md'>
+      <p className='text-base'>
         We care about data privacy and security. Please review our Privacy
         Policy. By using the App, you agree to be bound by our Privacy Policy,
         which is incorporated into these Terms and Conditions. Please be advised
@@ -329,7 +329,7 @@ const Terms: React.FC = (): JSX.Element => {
         transferred to and processed in the United States.
       </p>
       <h2 className='text-3xl text-berry mb-2 mt-8'>COPYRIGHT INFRINGEMENTS</h2>
-      <p className='text-md'>
+      <p className='text-base'>
         We respect the intellectual property rights of others. If you believe
         that any material available on or through the App infringes upon any
         copyright you own or control, please immediately notify us using the
@@ -342,7 +342,7 @@ const Terms: React.FC = (): JSX.Element => {
         you should consider first contacting an attorney.
       </p>
       <h2 className='text-3xl text-berry mb-2 mt-8'>TERM AND TERMINATION</h2>
-      <p className='text-md'>
+      <p className='text-base'>
         These Terms and Conditions shall remain in full force and effect while
         you use the App. WITHOUT LIMITING ANY OTHER PROVISION OF THESE TERMS AND
         CONDITIONS, WE RESERVE THE RIGHT TO, IN OUR SOLE DISCRETION AND WITHOUT
@@ -364,7 +364,7 @@ const Terms: React.FC = (): JSX.Element => {
       <h2 className='text-3xl text-berry mb-2 mt-8'>
         MODIFICATIONS AND INTERRUPTIONS
       </h2>
-      <p className='text-md'>
+      <p className='text-base'>
         We reserve the right to change, modify, or remove the contents of the
         App at any time or for any reason at our sole discretion without notice.
         However, we have no obligation to update any information on our Site. We
@@ -384,7 +384,7 @@ const Terms: React.FC = (): JSX.Element => {
         corrections, updates, or releases in connection therewith.
       </p>
       <h2 className='text-3xl text-berry mb-2 mt-8'>CORRECTIONS</h2>
-      <p className='text-md'>
+      <p className='text-base'>
         There may be information on the App that contains typographical errors,
         inaccuracies, or omissions that may relate to the App, including
         descriptions, pricing, availability, and various other information. We
@@ -393,7 +393,7 @@ const Terms: React.FC = (): JSX.Element => {
         prior notice.
       </p>
       <h2 className='text-3xl text-berry mb-2 mt-8'>DISCLAIMER</h2>
-      <p className='text-md'>
+      <p className='text-base'>
         THE APP IS PROVIDED ON AN AS-IS AND AS-AVAILABLE BASIS. YOU AGREE THAT
         YOUR USE OF THE APP AND OUR SERVICES WILL BE AT YOUR SOLE RISK. TO THE
         FULLEST EXTENT PERMITTED BY LAW, WE DISCLAIM ALL WARRANTIES, EXPRESS OR
@@ -425,7 +425,7 @@ const Terms: React.FC = (): JSX.Element => {
       <h2 className='text-3xl text-berry mb-2 mt-8'>
         LIMITATIONS OF LIABILITY
       </h2>
-      <p className='text-md'>
+      <p className='text-base'>
         IN NO EVENT WILL WE OR OUR DIRECTORS, EMPLOYEES, OR AGENTS BE LIABLE TO
         YOU OR ANY THIRD PARTY FOR ANY DIRECT, INDIRECT, CONSEQUENTIAL,
         EXEMPLARY, INCIDENTAL, SPECIAL, OR PUNITIVE DAMAGES, INCLUDING LOST
@@ -434,7 +434,7 @@ const Terms: React.FC = (): JSX.Element => {
         DAMAGES.
       </p>
       <h2 className='text-3xl text-berry mb-2 mt-8'>USER DATA</h2>
-      <p className='text-md'>
+      <p className='text-base'>
         We will maintain certain data that you transmit to the App for the
         purpose of managing the App, as well as data relating to your use of the
         App. Although we perform regular routine backups of data, you are solely
@@ -447,7 +447,7 @@ const Terms: React.FC = (): JSX.Element => {
       <h2 className='text-3xl text-berry mb-2 mt-8'>
         ELECTRONIC COMMUNICATIONS, TRANSACTIONS, AND SIGNATURES
       </h2>
-      <p className='text-md'>
+      <p className='text-base'>
         Visiting the App, sending us emails, and completing online forms
         constitute electronic communications. You consent to receive electronic
         communications, and you agree that all agreements, notices, disclosures,
@@ -460,7 +460,7 @@ const Terms: React.FC = (): JSX.Element => {
         AND OTHER RECORDS, AND TO ELECTRONIC DELIVERY OF NOTICES, POLICIES, AND
         RECORDS OF TRANSACTIONS INITIATED OR COMPLETED BY US OR VIA THE APP.
       </h2>
-      <p className='text-md'>
+      <p className='text-base'>
         You hereby waive any rights or requirements under any statutes,
         regulations, rules, ordinances, or other laws in any jurisdiction which
         require an original signature or delivery or retention of non-electronic
@@ -468,7 +468,7 @@ const Terms: React.FC = (): JSX.Element => {
         than electronic means.
       </p>
       <h2 className='text-3xl text-berry mb-2 mt-8'>MISCELLANEOUS</h2>
-      <p className='text-md'>
+      <p className='text-base'>
         These Terms and Conditions and any policies or operating rules posted by
         us on the App constitute the entire agreement and understanding between
         you and us. Our failure to exercise or enforce any right or provision of

@@ -10,7 +10,7 @@ const Privacy: React.FC = (): JSX.Element => {
         id='privacy-title'>
         PRIVACY STATEMENT
       </h1>
-      <p className='text-xl max-400:text-lg max-300:text-md'>
+      <p className='text-xl max-400:text-lg max-300:text-base'>
         The Number respects your privacy and is committed to protecting your
         personal information. This Privacy Statement outlines how we collect,
         use, and safeguard your data when you use our mobile application.
@@ -21,7 +21,7 @@ const Privacy: React.FC = (): JSX.Element => {
       />
       <div className='mb-10 max-400:mb-5'>
         <h2 className='text-3xl text-strawberry mb-2'>DATA COLLECTION</h2>
-        <p className='text-md'>
+        <p className='text-base'>
           We want to reassure our users that The Number does not collect any
           personal data or information from you while you use our mobile
           application. We do not gather any data about your device, usage
@@ -31,14 +31,14 @@ const Privacy: React.FC = (): JSX.Element => {
       </div>
       <div className='mb-10 max-400:mb-5'>
         <h2 className='text-3xl text-strawberry mb-2'>DATA USAGE</h2>
-        <p className='text-md'>
+        <p className='text-base'>
           Since we do not collect any data, we do not use your personal
           information for any purpose.
         </p>
       </div>
       <div className='mb-10 max-400:mb-5'>
         <h2 className='text-3xl text-strawberry mb-2'>DATA SHARING</h2>
-        <p className='text-md'>
+        <p className='text-base'>
           We do not share any data, personal or otherwise, with third parties.
           Your information is not disclosed, sold, or rented to any external
           entities.
@@ -46,14 +46,14 @@ const Privacy: React.FC = (): JSX.Element => {
       </div>
       <div className='mb-10 max-400:mb-5'>
         <h2 className='text-3xl text-strawberry mb-2'>CHANGES</h2>
-        <p className='text-md'>
+        <p className='text-base'>
           We reserve the right to update this Privacy Statement from time to
           time. Any changes will be reflected on this page.
         </p>
       </div>
       <div className='mb-10 max-400:mb-5'>
         <h2 className='text-3xl text-strawberry mb-2'>CONTACT US</h2>
-        <p className='text-md mb-2'>
+        <p className='text-base mb-2'>
           If you have any questions or concerns regarding this Privacy Statement
           or the privacy practices of The Number, please contact us{' '}
           <a
@@ -66,7 +66,7 @@ const Privacy: React.FC = (): JSX.Element => {
       </div>
       <div>
         <h2 className='text-3xl text-strawberry mb-2'>AGREEMENT</h2>
-        <p className='text-md'>
+        <p className='text-base'>
           By using The Number, you signify your acceptance of this Privacy
           Statement. If you do not agree to this Privacy Statement, please
           refrain from using our mobile application. Thank you for trusting The

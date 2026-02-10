@@ -79,7 +79,7 @@ const Header: React.FC = (): JSX.Element => {
       </button>
       {/* Navigation */}
       <nav aria-label='Primary navigation'>
-        <ul className='font-outfit-bold text-xl flex flex-row gap-5'>
+        <ul className='font-outfit-bold text-xl flex flex-row gap-5 max-400:text-base'>
           {LINKS.map(
             ({
               activeClass,
