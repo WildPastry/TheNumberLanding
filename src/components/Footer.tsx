@@ -25,10 +25,10 @@ const Footer: React.FC = (): JSX.Element => {
   return (
     <footer aria-label='Site footer'>
       <div className='inline-flex gap-1 p-5 max-400:p-3 bg-(--surface) border-r-4 border-(--accent)'>
-        <p className='text-md'>© {currentDate}</p>
+        <p className='text-base max-300:text-sm'>© {currentDate}</p>
         <a
           aria-label='Mike Parker website (opens in a new tab)'
-          className={`text-md text-(--fg) ${getHoverClass()}`}
+          className={`text-base text-(--fg) max-300:text-sm ${getHoverClass()}`}
           href='https://mikeparker.co.nz/'
           rel='noopener noreferrer'
           target='_blank'

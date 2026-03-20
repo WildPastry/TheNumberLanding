@@ -72,14 +72,14 @@ const Header: React.FC = (): JSX.Element => {
       className='flex justify-between items-center p-5 max-400:p-3 bg-(--surface) max-400:flex-col'>
       <button
         aria-label='The Number Logo'
-        className={`text-(--accent) ${getHoverClass()}`}
+        className={`text-(--accent) max-400:hidden ${getHoverClass()}`}
         onClick={pathname === '/home' ? undefined : handleLogoClick}
         title='The Number Logo'>
         <FaInfinity size={30} />
       </button>
       {/* Navigation */}
       <nav aria-label='Primary navigation'>
-        <ul className='font-outfit-bold text-xl flex flex-row gap-5'>
+        <ul className='font-outfit-bold text-xl flex flex-row gap-5 max-400:text-base'>
           {LINKS.map(
             ({
               activeClass,

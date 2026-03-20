@@ -96,7 +96,7 @@ const TheNumber: React.FC = (): JSX.Element => {
   return (
     <section
       aria-label='The Number'
-      className='flex flex-col items-center gap-4 mb-10'>
+      className='flex flex-col items-center gap-4 mb-10 max-600:gap-3 max-600:mb-5'>
       <button
         aria-label='Reset the number'
         className='cursor-pointer text-(--accent) hover:text-watermelon'
