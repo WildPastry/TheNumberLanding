@@ -11,7 +11,7 @@ const Badges: React.FC = (): JSX.Element => {
       <a
         aria-label='Download on the App Store (opens in a new tab)'
         className={joinClass(linkButtonBase, focusRing)}
-        href='https://apps.apple.com'
+        href='https://apps.apple.com/us/app/thenumbernz/id6759034720'
         rel='noopener noreferrer'
         target='_blank'
         title='Download on the App Store'>
@@ -21,7 +21,7 @@ const Badges: React.FC = (): JSX.Element => {
       <a
         aria-label='Get it on Google Play (opens in a new tab)'
         className={joinClass(linkButtonBase, focusRing)}
-        href='https://play.google.com/store'
+        href='https://play.google.com/store/apps/details?id=nz.co.mikeparker.thenumber'
         rel='noopener noreferrer'
         target='_blank'
         title='Get it on Google Play'>
