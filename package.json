@@ -14,31 +14,31 @@
     "start": "vite"
   },
   "dependencies": {
-    "react-dom": "^19.2.4",
+    "react-dom": "^19.2.6",
     "react-icons": "^5.6.0",
-    "react-router-dom": "^7.13.1",
-    "react": "^19.2.4"
+    "react-router-dom": "^7.15.0",
+    "react": "^19.2.6"
   },
   "devDependencies": {
-    "@tailwindcss/vite": "^4.2.2",
-    "@types/node": "^25.5.0",
+    "@tailwindcss/vite": "^4.2.4",
+    "@types/node": "^25.6.0",
     "@types/react-dom": "^19.2.3",
     "@types/react": "^19.2.14",
-    "@typescript-eslint/eslint-plugin": "^8.57.1",
-    "@typescript-eslint/parser": "^8.57.1",
+    "@typescript-eslint/eslint-plugin": "^8.59.2",
+    "@typescript-eslint/parser": "^8.59.2",
     "@vitejs/plugin-react": "^6.0.1",
     "@wildpastry/eslint-config": "^1.8.9",
     "eslint-plugin-prettier": "^5.5.5",
-    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.2",
-    "eslint": "^9.39.2",
-    "globals": "^17.4.0",
-    "prettier": "^3.8.1",
-    "tailwindcss": "^4.2.2",
-    "typescript-eslint": "^8.57.1",
-    "typescript": "~5.9.3",
-    "vite": "^8.0.1",
-    "@eslint/js": "^9.39.2",
+    "eslint": "^10.3.0",
+    "globals": "^17.6.0",
+    "prettier": "^3.8.3",
+    "tailwindcss": "^4.2.4",
+    "typescript-eslint": "^8.59.2",
+    "typescript": "~6.0.3",
+    "vite": "^8.0.10",
+    "@eslint/js": "^10.0.1",
     "eslint-plugin-react": "^7.37.5"
   }
 }
