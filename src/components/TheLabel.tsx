@@ -30,19 +30,46 @@ const CAP_OFFSET: number =
  */
 const MARK_GAP: string = '0.625rem';
 
+/*
+ * The mark's set width, measured in the browser at the real faces rather than
+ * estimated: it comes to 5.302 x its size, plus the fixed gap. Rounded up,
+ * because a cap that runs a shade small costs a few pixels of type while one
+ * that runs large puts the mark off the edge.
+ */
+const MARK_WIDTH_PER_UNIT: number = 5.4;
+
+/*
+ * What the row cannot spend: main's padding at its widest (2 x 1.25rem), plus
+ * a rem of slack for a desktop scrollbar, which 100vw counts and the layout
+ * does not get.
+ */
+const MARK_INSET: string = '3.5rem';
+
 const Label: React.FC = (): JSX.Element => {
+  /*
+   * The ladder below states the size the design wants; this caps it at the
+   * size that actually fits. The two dead zones it closes are narrow — under
+   * about 352px, and again from 400 to 432px, where the max-600 step sets 72
+   * while the padding is still 20 — so min() leaves the ladder untouched at
+   * every other width rather than replacing it with a fluid size throughout.
+   */
+  const rowStyle = {
+    '--mark-fit': `min(var(--mark), calc((100vw - ${MARK_INSET}) / ${MARK_WIDTH_PER_UNIT}))`,
+    'gap': MARK_GAP
+  } as CSSProperties;
+
   /*
    * Barlow Condensed sets untracked. Named explicitly because the h1 rule in
    * index.css otherwise leaks Cubano's 0.5px onto it.
    */
   const onlyStyle: CSSProperties = {
-    fontSize: `calc(var(--mark) * ${ONLY_SIZE} / ${NUMBERS_SIZE})`,
+    fontSize: `calc(var(--mark-fit) * ${ONLY_SIZE} / ${NUMBERS_SIZE})`,
     letterSpacing: 'normal',
-    transform: `translateY(calc(var(--mark) * ${-CAP_OFFSET}))`
+    transform: `translateY(calc(var(--mark-fit) * ${-CAP_OFFSET}))`
   };
 
   const numbersStyle: CSSProperties = {
-    fontSize: 'var(--mark)',
+    fontSize: 'var(--mark-fit)',
     /*
      * Cubano is tracked at −2/45 em at every size. Untracked Cubano is wrong
      * and looks it. An em, so it follows the font-size without restating.
@@ -69,7 +96,7 @@ const Label: React.FC = (): JSX.Element => {
       <h1
         className='flex items-baseline justify-end [--mark:6rem] max-600:[--mark:4.5rem] max-400:[--mark:3.75rem] max-300:[--mark:3rem]'
         id='home-title'
-        style={{ gap: MARK_GAP }}>
+        style={rowStyle}>
         <span
           className='font-barlow-condensed leading-none text-(--fg)'
           style={onlyStyle}>
