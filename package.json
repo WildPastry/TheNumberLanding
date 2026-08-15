@@ -24,7 +24,7 @@
     "@types/node": "^25.8.0",
     "@types/react-dom": "^19.2.3",
     "@types/react": "^19.2.14",
-    "@typescript-eslint/eslint-plugin": "^8.59.3",
+    "@typescript-eslint/eslint-plugin": "^8.59.4",
     "@typescript-eslint/parser": "^8.59.3",
     "@vitejs/plugin-react": "^6.0.2",
     "@wildpastry/eslint-config": "^1.8.9",
