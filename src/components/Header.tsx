@@ -18,8 +18,8 @@ type NavLinkMenuItem = {
 
 const LINKS: readonly NavLinkMenuItem[] = [
   {
-    activeClass: 'text-water cursor-default',
-    hoverClass: 'hover:text-water',
+    activeClass: 'text-(--brand) cursor-default',
+    hoverClass: 'hover:text-(--brand)',
     label: 'HOME',
     to: '/home'
   },
@@ -71,10 +71,10 @@ const Header: React.FC = (): JSX.Element => {
       aria-label='Site header'
       className='flex justify-between items-center p-5 max-400:p-3 bg-(--surface) max-400:flex-col'>
       <button
-        aria-label='The Number Logo'
+        aria-label='OnlyNumbers Logo'
         className={`text-(--accent) max-400:hidden ${getHoverClass()}`}
         onClick={pathname === '/home' ? undefined : handleLogoClick}
-        title='The Number Logo'>
+        title='OnlyNumbers Logo'>
         <FaInfinity size={30} />
       </button>
       {/* Navigation */}
@@ -95,7 +95,7 @@ const Header: React.FC = (): JSX.Element => {
                       isActive || isPending ? activeClass : inactiveClass,
                       hoverClass,
                       'inline-block py-1 rounded-sm',
-                      'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-water',
+                      'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-(--brand)',
                       'focus-visible:ring-offset-2 focus-visible:ring-offset-(--bg)'
                     ].join(' ')
                   }

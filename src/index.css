@@ -9,6 +9,11 @@
   --color-berry: #7b5ea7;
   --color-lemon: #fcba28;
   --color-water: #12b5e5;
+  /* The brand blue is two hexes, not one, and that is deliberate: deep water
+   * carries on the pale ground, water carries on the near-black one. The pale
+   * ground is where this palette runs out, so neither hex does both jobs.
+   * Consumed through --brand below, never directly. */
+  --color-water-deep: #0c7696;
   --color-watermelon: #ed203d;
   --color-flame: #fc7428;
 
@@ -19,6 +24,7 @@
   --color-secondary-dark: #231f20;
 
   /* Fonts */
+  --font-barlow-condensed: BarlowCondensedBold, sans-serif;
   --font-bebas: BebasNeueRegular, sans-serif;
   --font-cubano: CubanoRegular, sans-serif;
   --font-outfit: OutfitRegular, sans-serif;
@@ -39,6 +45,8 @@
   --surface: var(--color-secondary-light);
   --main-banner: var(--color-berry);
   --accent: var(--color-lime);
+  /* Numbers, in the mark. Deep water on the pale ground. */
+  --brand: var(--color-water-deep);
 }
 
 /* Dark theme */
@@ -49,6 +57,8 @@
   --surface: var(--color-secondary-dark);
   --main-banner: var(--color-lemon);
   --accent: var(--color-flame);
+  /* Numbers, in the mark. Water on the near-black ground. */
+  --brand: var(--color-water);
 }
 
 html,

@@ -19,7 +19,7 @@ const Footer: React.FC = (): JSX.Element => {
   const getHoverClass = (): string => {
     if (pathname === '/terms') return 'hover:text-berry';
     if (pathname === '/privacy') return 'hover:text-strawberry';
-    return 'hover:text-water';
+    return 'hover:text-(--brand)';
   };
 
   return (

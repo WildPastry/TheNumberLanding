@@ -11,7 +11,7 @@ const Privacy: React.FC = (): JSX.Element => {
         PRIVACY STATEMENT
       </h1>
       <p className='text-xl max-400:text-lg max-300:text-base'>
-        The Number respects your privacy and is committed to protecting your
+        OnlyNumbers respects your privacy and is committed to protecting your
         personal information. This Privacy Statement outlines how we collect,
         use, and safeguard your data when you use our mobile application.
       </p>
@@ -22,7 +22,7 @@ const Privacy: React.FC = (): JSX.Element => {
       <div className='mb-10 max-400:mb-5'>
         <h2 className='text-3xl text-strawberry mb-2'>DATA COLLECTION</h2>
         <p className='text-base'>
-          We want to reassure our users that The Number does not collect any
+          We want to reassure our users that OnlyNumbers does not collect any
           personal data or information from you while you use our mobile
           application. We do not gather any data about your device, usage
           patterns, or any other information that could potentially identify
@@ -55,7 +55,7 @@ const Privacy: React.FC = (): JSX.Element => {
         <h2 className='text-3xl text-strawberry mb-2'>CONTACT US</h2>
         <p className='text-base mb-2'>
           If you have any questions or concerns regarding this Privacy Statement
-          or the privacy practices of The Number, please contact us{' '}
+          or the privacy practices of OnlyNumbers, please contact us{' '}
           <a
             aria-label='Email thenumber@mikeparker.co.nz'
             className='ml-1 underline hover:text-strawberry'
@@ -67,10 +67,10 @@ const Privacy: React.FC = (): JSX.Element => {
       <div>
         <h2 className='text-3xl text-strawberry mb-2'>AGREEMENT</h2>
         <p className='text-base'>
-          By using The Number, you signify your acceptance of this Privacy
+          By using OnlyNumbers, you signify your acceptance of this Privacy
           Statement. If you do not agree to this Privacy Statement, please
-          refrain from using our mobile application. Thank you for trusting The
-          Number with your privacy.
+          refrain from using our mobile application. Thank you for trusting
+          OnlyNumbers with your privacy.
         </p>
       </div>
     </section>
