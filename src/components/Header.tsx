@@ -18,8 +18,8 @@ type NavLinkMenuItem = {
 
 const LINKS: readonly NavLinkMenuItem[] = [
   {
-    activeClass: 'text-water cursor-default',
-    hoverClass: 'hover:text-water',
+    activeClass: 'text-(--brand) cursor-default',
+    hoverClass: 'hover:text-(--brand)',
     label: 'HOME',
     to: '/home'
   },
@@ -95,7 +95,7 @@ const Header: React.FC = (): JSX.Element => {
                       isActive || isPending ? activeClass : inactiveClass,
                       hoverClass,
                       'inline-block py-1 rounded-sm',
-                      'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-water',
+                      'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-(--brand)',
                       'focus-visible:ring-offset-2 focus-visible:ring-offset-(--bg)'
                     ].join(' ')
                   }
