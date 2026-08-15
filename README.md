@@ -1,6 +1,6 @@
 # TheNumberLanding
 
-Landing page for The Number
+Landing page for OnlyNumbers
 
 ## Development
 
